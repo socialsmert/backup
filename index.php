@@ -1,4 +1,7 @@
 <?php
+
+test vlad
+
 session_start();
 if (!isset($_SESSION[language])){
     $_SESSION[language] = "ukr";
