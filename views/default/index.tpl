@@ -233,8 +233,8 @@
 
 
 <div class="section-footer" id="section-footer">
-	<a id="linktotop" href="#">AAAA</a>	
-	<h1>©2017 Arsenal-Kyiv</h1>
+	<a id="linktotop" href="#"><i id="arr" class="fa fa-arrow-circle-up" aria-hidden="true"></i></a>	
+	<h1 id="copyr">©2017 Arsenal-Kyiv</h1>
 </div>
 
 <script>
@@ -243,6 +243,7 @@
 			$("html, body").animate({ scrollTop: 0 }, 'slow');
 			return false;
 		});
+		
 	});
 </script>
 
