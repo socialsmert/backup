@@ -1,3 +1,27 @@
+<?php
+/* Smarty version 3.1.30, created on 2017-09-29 20:21:35
+  from "W:\domains\backup\views\default\album.tpl" */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.30',
+  'unifunc' => 'content_59ce811fdcead8_68052504',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    'cb173188646b4a6da7e49e3dafe0ed46f7ad036f' => 
+    array (
+      0 => 'W:\\domains\\backup\\views\\default\\album.tpl',
+      1 => 1506697628,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_59ce811fdcead8_68052504 (Smarty_Internal_Template $_smarty_tpl) {
+?>
 <style>
 
 </style>
@@ -13,11 +37,22 @@
 
     <div id="album-content">
         
-         <div class="content-album-item-main-1-title"> {foreach $album as $item name=album}
+         <div class="content-album-item-main-1-title"> <?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['album']->value, 'item', false, NULL, 'album', array (
+));
+if ($_from !== null) {
+foreach ($_from as $_smarty_tpl->tpl_vars['item']->value) {
+?>
 
-        {$item['title']}
+        <?php echo $_smarty_tpl->tpl_vars['item']->value['title'];?>
 
-        {/foreach}</div>
+
+        <?php
+}
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl);
+?>
+</div>
     <div class="content-album-item-main-1-spacer"></div>
     
 
@@ -27,7 +62,12 @@
     <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
         
 
-        {foreach $photos as $item name=photos}
+        <?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['photos']->value, 'item', false, NULL, 'photos', array (
+));
+if ($_from !== null) {
+foreach ($_from as $_smarty_tpl->tpl_vars['item']->value) {
+?>
         
         
         <div id="selected-album-gallery-item" class="album-gallery-item">
@@ -37,8 +77,11 @@
 
 
         <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-            <a href="/images/albums/{$item['photo']}" itemprop="contentUrl" data-size="{$item['size']}">
-                <img src="/images/albums/{$item['photo']}" itemprop="thumbnail" alt="Image description" />
+            <a href="/images/albums/<?php echo $_smarty_tpl->tpl_vars['item']->value['photo'];?>
+" itemprop="contentUrl" data-size="<?php echo $_smarty_tpl->tpl_vars['item']->value['size'];?>
+">
+                <img src="/images/albums/<?php echo $_smarty_tpl->tpl_vars['item']->value['photo'];?>
+" itemprop="thumbnail" alt="Image description" />
             </a>
             <figcaption itemprop="caption description"></figcaption>
 
@@ -46,7 +89,12 @@
         
         </div>
 
-        {/foreach}
+        <?php
+}
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl);
+?>
+
 
 
     </div>
@@ -121,9 +169,10 @@ It's a separate element, as animating opacity is faster than rgba(). -->
 
 
 
-    {literal}
+    
 
-    <script>
+    <?php echo '<script'; ?>
+>
 
         var initPhotoSwipeFromDOM = function(gallerySelector) {
 
@@ -331,10 +380,12 @@ It's a separate element, as animating opacity is faster than rgba(). -->
         // execute above function
         initPhotoSwipeFromDOM('.my-gallery');
 
-    </script>
+    <?php echo '</script'; ?>
+>
 
 
-    {/literal}
+    
 
 
-</div>
+</div><?php }
+}

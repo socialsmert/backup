@@ -6,8 +6,8 @@
 
             <div class="s-1-content-left">
 
-                <div class="s-1-content-left-title">Головні новини</div>
-                <div class="s-1-content-left-date"><a href="/news">перейти до всіх новин</a></div>
+                <div class="s-1-content-left-title">Main news</div>
+                <div class="s-1-content-left-date"><a href="/news">to all news</a></div>
 
                 <a href="/" class="s-1-content-left-news-item">
 
@@ -52,12 +52,12 @@
 
         <div id="s-2-content-scroll"><img src="/images/scroll.png" alt=""></div>
 
-        <div id="s-2-content-left" class="section-2-content-left">НАШ<br>АРСЕНАЛ<br>КИЇВ</div>
+        <div id="s-2-content-left" class="section-2-content-left">OUR<br>ARSENAL<br>KYIV</div>
         <div id="section-2-content-divider"></div>
-        <div id="s-2-content-right" class="section-2-content-right">Оновлений столичний ФК «Арсенал» – це в першу чергу, вірність традиціям. Ми ставимо перед собою ціль створити сім’ю, із футболістів та вболівальників. Опираючись на свій внутрішній ресурс, дитячо-юнацьку футбольну школу молодих «канонірів», ми продовжуємо шлях до вершин українського футболу.</div>
+        <div id="s-2-content-right" class="section-2-content-right">The updated capital's FC Arsenal is faithful to the traditions. We set ourselves the goal of creating a family of football players and fans. Relying on our internal resource, the children's and youth football school of young "gunners", we continue our way to the top of Ukrainian football.</div>
 
-        <a href="/" id="s-2-content-item-1" class="s-2-content-item"><img src="/images/team.png" alt="">КОМАНДА</a>
-        <a href="/" id="s-2-content-item-2" class="s-2-content-item"><img src="/images/stadium.png" alt="">СТАДІОН</a>
+        <a href="/" id="s-2-content-item-1" class="s-2-content-item"><img src="/images/team.png" alt="">TEAM</a>
+        <a href="/" id="s-2-content-item-2" class="s-2-content-item"><img src="/images/stadium.png" alt="">STADIUM</a>
 
     </div>
 
@@ -79,7 +79,7 @@
                     </div>
                     <div class="section-3-content-match-item-result">
 
-                        РЕЗУЛЬТАТ
+                        RESULT
                         <br><span class="score">{$item['score1']} - {$item['score2']}</span><br>
                         <span class="date">{$item['date']}</span>
 
@@ -97,7 +97,7 @@
         </div>
         <div class="s-3-buttons">
             <button onclick="previtem()"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
-            інші матчі
+            other matches
             <button onclick="nextitem()"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
         </div>
         {literal}
@@ -125,13 +125,13 @@
 <div class="section-4">
 
     <div class="section-4-content">
-        Турнірна таблиця<br>
+        The tournament table<br>
         <table cellspacing="0" class="tournament-table" id="head-table">
             <tr>
                 <td>#</td>
-                <td class="team">Команда</td>
-                <td class="games">І</td>
-                <td class="score">О</td>
+                <td class="team">Team</td>
+                <td class="games">G</td>
+                <td class="score">P</td>
             </tr>
         </table>
         {$table}

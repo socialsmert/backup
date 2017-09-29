@@ -4,7 +4,7 @@
 
 
 <div class="album-page">
-    <div class="content-album-item-main-1-title">фото галерея</div>
+    <div class="content-album-item-main-1-title">PHOTO</div>
     <div class="content-album-item-main-1-spacer"></div>
     
     
@@ -23,7 +23,7 @@
     </a>
     {/foreach}
 
-    <div class="content-album-item-main-1-title-2">Відео галерея</div>
+    <div class="content-album-item-main-1-title-2">VIDEO</div>
     <div class="content-album-item-main-1-spacer"></div>
     
     {foreach $videos as $item name=videos}
