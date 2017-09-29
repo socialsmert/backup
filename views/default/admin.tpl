@@ -1,5 +1,4 @@
 <div class="admin-main">
-
     <table cellspacing="0">
         <tr>
             <td class="header" colspan="3">Керування</td>
@@ -7,7 +6,7 @@
         </tr>
         <tr>
             <td colspan="3" class="title">Новини</td>
-            
+
         </tr>
         <tr>
             <td>Новини</td>

@@ -87,9 +87,9 @@
 
             </div>
             <div class="header-right">
-                <a href="https://www.youtube.com/channel/UCDmbGqu-YvtT7hjVJt2JQZg" class="header-right-item"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
-                <a href="https://www.facebook.com/arsenal1925kyiv" class="header-right-item"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                <a href="https://www.instagram.com/arsenal_kyiv_official/" class="header-right-item"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="/" class="header-right-item"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                <a href="/" class="header-right-item"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="/" class="header-right-item"><i class="fa fa-instagram" aria-hidden="true"></i></a>
 
 
             </div>
@@ -114,9 +114,9 @@
 
             </div>
             <div class="header-right">
-                <a href="https://www.youtube.com/channel/UCDmbGqu-YvtT7hjVJt2JQZg" class="header-right-item"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
-                <a href="https://www.facebook.com/arsenal1925kyiv" class="header-right-item"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                <a href="https://www.instagram.com/arsenal_kyiv_official/" class="header-right-item"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="/" class="header-right-item"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                <a href="/" class="header-right-item"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="/" class="header-right-item"><i class="fa fa-instagram" aria-hidden="true"></i></a>
 
 
             </div>

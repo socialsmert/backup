@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-09-29 19:33:55
+/* Smarty version 3.1.30, created on 2017-09-29 23:16:50
   from "W:\domains\backup\views\default\index.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_59ce75f3e19fa1_77929308',
+  'unifunc' => 'content_59ceaa32bc6fb2_20751896',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '8eeafde441d3724a3cd0c12a5c5f87a9835f7cc3' => 
     array (
       0 => 'W:\\domains\\backup\\views\\default\\index.tpl',
-      1 => 1506697629,
+      1 => 1506716181,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_59ce75f3e19fa1_77929308 (Smarty_Internal_Template $_smarty_tpl) {
+function content_59ceaa32bc6fb2_20751896 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 
 
@@ -78,7 +78,7 @@ function content_59ce75f3e19fa1_77929308 (Smarty_Internal_Template $_smarty_tpl)
 
         <div id="s-2-content-left" class="section-2-content-left">НАШ<br>АРСЕНАЛ<br>КИЇВ</div>
         <div id="section-2-content-divider"></div>
-        <div id="s-2-content-right" class="section-2-content-right">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur fuga, assumenda hic dolorem quibusdam placeat non atque deleniti dignissimos ex recusandae nisi, mollitia esse cupiditate maiores sapiente officiis suscipit praesentium. Lorem ipsum dolor sit amat fet</div>
+        <div id="s-2-content-right" class="section-2-content-right">Оновлений столичний ФК «Арсенал» – це в першу чергу, вірність традиціям. Ми ставимо перед собою ціль створити сім’ю, із футболістів та вболівальників. Опираючись на свій внутрішній ресурс, дитячо-юнацьку футбольну школу молодих «канонірів», ми продовжуємо шлях до вершин українського футболу.</div>
 
         <a href="/" id="s-2-content-item-1" class="s-2-content-item"><img src="/images/team.png" alt="">КОМАНДА</a>
         <a href="/" id="s-2-content-item-2" class="s-2-content-item"><img src="/images/stadium.png" alt="">СТАДІОН</a>
