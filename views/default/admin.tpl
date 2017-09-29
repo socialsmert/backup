@@ -1,6 +1,4 @@
 <div class="admin-main">
-
-    test
     <table cellspacing="0">
         <tr>
             <td class="header" colspan="3">Керування</td>
