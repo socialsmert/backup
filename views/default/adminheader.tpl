@@ -14,4 +14,7 @@
     <body>
 
 
+    <a href="/admin/logout">exit</a>
+
+
        

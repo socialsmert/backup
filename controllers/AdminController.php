@@ -17,43 +17,88 @@ function generateRandomString($length = 20) {
 }
 
 function indexAction($smarty){
+    if ($_SESSION['login'] == 1){
+        $smarty->assign('pageTitle', 'Admin');
+        $smarty->assign('displayValue', 'block');
+        loadTemplate($smarty, 'adminheader');
+        loadTemplate($smarty, 'admin');
+    }else{
+        $smarty->assign('pageTitle', 'Admin');
+        $smarty->assign('displayValue', 'none');
+        loadTemplate($smarty, 'adminheader');
+        loadTemplate($smarty, 'adminlogin');
+    }
 
-    $smarty->assign('pageTitle', 'Admin');
-    loadTemplate($smarty, 'adminheader');
-    loadTemplate($smarty, 'admin');
+}
+
+
+
+
+
+
+function loginAction(){
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+
+    if (($username == "admin") && ($password == "1234")){
+        $_SESSION['login'] = 1;
+    }else{
+        $_SESSION['login'] = 0;
+    }
+
+    header( "Location: /admin" );
+}
+
+function logoutAction(){
+    $_SESSION['login'] = 0;
+    header( "Location: /admin" );
 }
 
 
 function playerAction($smarty){
+    if ($_SESSION['login'] == 1){
     $id = $_GET['id'];
     $player = showSelectedPlayer($id);
     $smarty->assign('player', $player);
     loadTemplate($smarty, 'adminheader');
     loadTemplate($smarty, 'adminplayer');
-
+    }else{
+        header( "Location: /admin" );
+    }
 }
 
 function imagesAction($smarty){
-    $images = showImage();
+    if ($_SESSION['login'] == 1){
+        $images = showImage();
     $smarty->assign('images', $images);
     loadTemplate($smarty, 'adminheader');
     loadTemplate($smarty, 'adminimage');
+    }else{
+        header( "Location: /admin" );
+    }
 }
+
 
 
 //NEWS
 
 function newsAction($smarty){
+    if ($_SESSION['login'] == 1){
     $news = showAllNews();
     $hiddennews = showAllHiddenNews();
     $smarty->assign('news', $news);
     $smarty->assign('hiddennews', $hiddennews);
     loadTemplate($smarty, 'adminheader');
     loadTemplate($smarty, 'adminnews');
+    }else{
+        header( "Location: /admin" );
+    }
 }
 
+
 function addnewsAction($smarty){
-    $title = $_POST['title'];
+    if ($_SESSION['login'] == 1){
+        $title = $_POST['title'];
     $date = $_POST['date'];
     $image = $_POST['image'];
     $text = $_POST['text'];
@@ -67,22 +112,32 @@ function addnewsAction($smarty){
     if($res){
         header( "Location: /admin/news" );
     }
+    }else{
+        header( "Location: /admin" );
+    }
 }
 
 
 
+
 function editnewsAction($smarty){
-    $id = $_GET['id'];
+    if ($_SESSION['login'] == 1){
+        $id = $_GET['id'];
     $news = showSelectedNews($id);
     $smarty->assign('news', $news);
     loadTemplate($smarty, 'adminheader');
     loadTemplate($smarty, 'admineditnews');
 
+    }else{
+        header( "Location: /admin" );
+    }
 }
+
 
 
 function updatenewsAction()
 {
+    if ($_SESSION['login'] == 1){
     $id = $_GET['id'];
     $title = $_POST['title'];
     $date = $_POST['date'];
@@ -92,54 +147,84 @@ function updatenewsAction()
 
     header( "Location: /admin/news" );
 
+    }else{
+        header( "Location: /admin" );
+    }
 }
 
+
 function deletenewsAction(){
-    $id = $_GET['id'];
+    if ($_SESSION['login'] == 1){
+        $id = $_GET['id'];
     deleteNews($id);
     header( "Location: /admin/news" );
+    }else{
+        header( "Location: /admin" );
+    }
 }
+
 
 
 function shownewsAction(){
-    $id =$_GET['id'];
+    if ($_SESSION['login'] == 1){
+        $id =$_GET['id'];
     makeVisibleNews($id);
     header( "Location: /admin/news" );
 
+    }else{
+        header( "Location: /admin" );
+    }
 }
 
+
 function hidenewsAction(){
-    $id =$_GET['id'];
+    if ($_SESSION['login'] == 1){
+        $id =$_GET['id'];
     makeHiddenNews($id);
     header( "Location: /admin/news" );
 
+    }else{
+        header( "Location: /admin" );
+    }
 }
+
 
 
 
 //CALENDAR
 
 function calendarAction($smarty){
+    if ($_SESSION['login'] == 1){
     $calendar = showCalendar();
 
     $smarty->assign('calendar', $calendar);
     loadTemplate($smarty, 'adminheader');
     loadTemplate($smarty, 'admincalendar');
+    }else{
+        header( "Location: /admin" );
+    }
 }
 
+
 function newcalendarAction($smarty){
-    $calendar = showCalendar();
+    if ($_SESSION['login'] == 1){
+        $calendar = showCalendar();
 
     $smarty->assign('calendar', $calendar);
     loadTemplate($smarty, 'adminheader');
     loadTemplate($smarty, 'adminaddcalendar');
+    }else{
+        header( "Location: /admin" );
+    }
 }
+
 
 
 
 
 function addcalendarAction(){
-    $date = $_POST['calendar-date'];
+    if ($_SESSION['login'] == 1){
+        $date = $_POST['calendar-date'];
     $place = $_POST['calendar-place'];
     $team1 = $_POST['calendar-team1'];
     $score1 = $_POST['calendar-score1'];
@@ -153,17 +238,26 @@ function addcalendarAction(){
     if($res){
         header( "Location: /admin/calendar" );
     }
+    }else{
+        header( "Location: /admin" );
+    }
 }
+
 
 
 function deletecalendarAction(){
-    $id = $_GET['id'];
+    if ($_SESSION['login'] == 1){
+        $id = $_GET['id'];
     deleteCalendar($id);
     header( "Location: /admin/calendar" );
+    }else{
+        header( "Location: /admin" );
+    }
 }
 
-function savecalendarchangesAction(){
 
+function savecalendarchangesAction(){
+    if ($_SESSION['login'] == 1){
     $id = $_POST['id'];
     $date = $_POST['date'];
     $place = $_POST['place'];
@@ -186,24 +280,33 @@ function savecalendarchangesAction(){
 
     echo json_encode($resData);
     return;
-
+    }else{
+        header( "Location: /admin" );
+    }
 }
 
 
+
 function albumsAction($smarty){
-    $albums = showAlbums();
+    if ($_SESSION['login'] == 1){
+        $albums = showAlbums();
     $smarty->assign('albums', $albums);
 
     loadTemplate($smarty, 'adminheader');
     loadTemplate($smarty, 'adminalbum');
 
+    }else{
+        header( "Location: /admin" );
+    }
 }
 
 
 
 
+
 function addalbumAction($smarty){
-    $title = $_POST['title'];
+    if ($_SESSION['login'] == 1){
+        $title = $_POST['title'];
     $mainphoto = $_POST['mainphoto'];
 
     $res = insertAlbum($title, $mainphoto);
@@ -211,11 +314,16 @@ function addalbumAction($smarty){
     if($res){
         header( "Location: /admin/album" );
     }
+    }else{
+        header( "Location: /admin" );
+    }
 }
+
 
 //
 function addalbumphotoAction(){
-    $id =$_GET['id'];
+    if ($_SESSION['login'] == 1){
+        $id =$_GET['id'];
     $name = $_POST['name'];
     $size = getSize($name);
 
@@ -224,17 +332,27 @@ function addalbumphotoAction(){
    if($res){
         header( "Location: /admin/editalbum/$id" );
      }
+    }else{
+        header( "Location: /admin" );
+    }
 }
 
+
 function deletealbumphotoAction(){
-    $id = $_GET['id'];
+    if ($_SESSION['login'] == 1){
+        $id = $_GET['id'];
     $album_id = deleteAlbumPhoto($id);
     header( "Location: /admin/editalbum/$album_id" );
+    }else{
+        header( "Location: /admin" );
+    }
 }
+
 
 
 function editalbumAction($smarty){
-    $id =$_GET['id'];
+    if ($_SESSION['login'] == 1){
+        $id =$_GET['id'];
     $albums = showSelectedAlbum($id);
     $photos = showSelectedAlbumPhotos($id);
 
@@ -243,44 +361,69 @@ function editalbumAction($smarty){
 
     loadTemplate($smarty, 'adminheader');
     loadTemplate($smarty, 'admineditalbum');
+    }else{
+        header( "Location: /admin" );
+    }
 }
+
 
 
 
 function updatealbumAction($smarty){
-    $id =$_GET['id'];
+    if ($_SESSION['login'] == 1){
+        $id =$_GET['id'];
     $title = $_POST['title'];
     $mainphoto = $_POST['mainphoto'];
     updateAlbums($id, $title, $mainphoto);
     header( "Location: /admin/album" );
+    }else{
+        header( "Location: /admin" );
+    }
 }
 
 
+
 function videosAction($smarty){
-    $videos = showVideos();
+    if ($_SESSION['login'] == 1){
+        $videos = showVideos();
     $smarty->assign('videos', $videos);
 
     loadTemplate($smarty, 'adminheader');
     loadTemplate($smarty, 'adminvideos');
+    }else{
+        header( "Location: /admin" );
+    }
 }
 
+
 function addvideoAction(){
-    $title = $_POST['title'];
+    if ($_SESSION['login'] == 1){
+        $title = $_POST['title'];
     $image = $_POST['image'];
     $link = $_POST['link'];
     insertVideos($title, $image, $link);
     header( "Location: /admin/videos" );
+    }else{
+        header( "Location: /admin" );
+    }
 }
 
+
 function deletevideoAction(){
-    $id =$_GET['id'];
+    if ($_SESSION['login'] == 1){
+        $id =$_GET['id'];
     deleteVideo($id);
     header( "Location: /admin/videos" );
+    }else{
+        header( "Location: /admin" );
+    }
 }
+
 
 
 function addimageAction(){
-    if ( 0 < $_FILES['file']['error'] ) {
+    if ($_SESSION['login'] == 1){
+        if ( 0 < $_FILES['file']['error'] ) {
         echo 'Error: ' . $_FILES['file']['error'] . '<br>';
     }
     else {
@@ -305,4 +448,8 @@ function addimageAction(){
 
     }
 
+    }else{
+        header( "Location: /admin" );
+    }
 }
+
