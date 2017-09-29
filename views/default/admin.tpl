@@ -7,7 +7,7 @@
         </tr>
         <tr>
             <td colspan="3" class="title">Новини</td>
-            
+            test vlad
         </tr>
         <tr>
             <td>Новини</td>
