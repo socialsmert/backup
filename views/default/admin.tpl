@@ -20,7 +20,7 @@
         <tr>
             <td>Альбоми</td>
             <td>+ Додати</td>
-            <td>Переглянути</td>
+            <td><a href="/admin/albums">Переглянути</a></td>
         </tr>
         <tr>
             <td>Відео</td>
@@ -42,7 +42,7 @@
         <tr>
             <td>Фото</td>
             <td>+ Додати</td>
-            <td>Переглянути</td>
+            <td><a href="/admin/images">Переглянути</a></td>
         </tr>
     
     </table>

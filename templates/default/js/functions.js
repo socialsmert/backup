@@ -59,40 +59,13 @@ function saveCalendarChanges(){
 
 
 
-function addalbumphoto() {
-    if (document.getElementById("albumphoto").value != "") {
-        var id = $('#albumid').val();
-        var file_data = $('#albumphoto').prop('files')[0];
+function addimage(){
+    if (document.getElementById("image").value != "") {
+        var file_data = $('#image').prop('files')[0];
         var form_data = new FormData();
         form_data.append('file', file_data);
         $.ajax({
-            url: '/admin/addalbumphoto/'+id,
-            dataType: 'text',
-            cache: false,
-            contentType: false,
-            processData: false,
-            data: form_data,
-            type: 'post',
-            success: function(php_script_response){
-
-                alert("Фото завантажено");
-                location.reload(true);
-            }
-        });
-    }else {
-        alert ("Оберіть фото для завантаження!")
-    }
-}
-
-
-function addalbummainhoto(){
-    if (document.getElementById("albummainphoto").value != "") {
-        var id = $('#albummainid').val();
-        var file_data = $('#albummainphoto').prop('files')[0];
-        var form_data = new FormData();
-        form_data.append('file', file_data);
-        $.ajax({
-            url: '/admin/addalbummainphoto/'+id,
+            url: '/admin/addimage',
             dataType: 'text',
             cache: false,
             contentType: false,

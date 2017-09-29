@@ -4,8 +4,17 @@ include "models/CalendarModel.php";
 include "models/AlbumModel.php";
 include "models/PlayerModel.php";
 include "models/ImageModel.php";
+include "models/VideoModel.php";
 
-
+function generateRandomString($length = 20) {
+    $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    $charactersLength = strlen($characters);
+    $randomString = '';
+    for ($i = 0; $i < $length; $i++) {
+        $randomString .= $characters[rand(0, $charactersLength - 1)];
+    }
+    return $randomString;
+}
 
 function indexAction($smarty){
 
@@ -21,10 +30,10 @@ function playerAction($smarty){
     $smarty->assign('player', $player);
     loadTemplate($smarty, 'adminheader');
     loadTemplate($smarty, 'adminplayer');
-    
+
 }
 
-function imageAction($smarty){
+function imagesAction($smarty){
     $images = showImage();
     $smarty->assign('images', $images);
     loadTemplate($smarty, 'adminheader');
@@ -43,14 +52,24 @@ function newsAction($smarty){
     loadTemplate($smarty, 'adminnews');
 }
 
-function newarticleAction($smarty){
-    $news = showAllNews();
-    $hiddennews = showAllHiddenNews();
-    $smarty->assign('news', $news);
-    $smarty->assign('hiddennews', $hiddennews);
-    loadTemplate($smarty, 'adminheader');
-    loadTemplate($smarty, 'adminaddnews');
+function addnewsAction($smarty){
+    $title = $_POST['title'];
+    $date = $_POST['date'];
+    $image = $_POST['image'];
+    $text = $_POST['text'];
+
+
+
+
+
+    $res = insertNews($title, $date, $text, $image);
+
+    if($res){
+        header( "Location: /admin/news" );
+    }
 }
+
+
 
 function editnewsAction($smarty){
     $id = $_GET['id'];
@@ -68,7 +87,7 @@ function updatenewsAction()
     $title = $_POST['title'];
     $date = $_POST['date'];
     $text = $_POST['text'];
-    
+
     $res = updateNews($id, $title, $date, $text);
 
     header( "Location: /admin/news" );
@@ -96,83 +115,7 @@ function hidenewsAction(){
 
 }
 
-function addnewsAction($smarty){
-    $title = $_POST['title'];
-    $date = $_POST['date'];
-    $image = $_POST['image'];
-    $text = $_POST['text'];
 
-
-
-
-
-    $res = insertNews($title, $date, $text, $image);
-
-    if($res){
-        header( "Location: /admin/news" );
-    }
-}
-
-
-function generateRandomString($length = 20) {
-    $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
-    $charactersLength = strlen($characters);
-    $randomString = '';
-    for ($i = 0; $i < $length; $i++) {
-        $randomString .= $characters[rand(0, $charactersLength - 1)];
-    }
-    return $randomString;
-}
-
-
-function setnewsimageAction(){
-    if ( 0 < $_FILES['file']['error'] ) {
-        echo 'Error: ' . $_FILES['file']['error'] . '<br>';
-    }
-    else {
-
-
-
-        $ext = pathinfo($_FILES['file']['name'], PATHINFO_EXTENSION);
-
-
-
-        $filename = generateRandomString($length = 20);
-
-
-        $newFileName = $filename . '.' . $ext;
-
-
-        move_uploaded_file($_FILES['file']['tmp_name'], $_SERVER['DOCUMENT_ROOT'] .  '/images/news/' . $newFileName);
-
-        echo $newFileName;
-    }
-
-}
-
-function setnewsmainimageAction(){
-    if ( 0 < $_FILES['file']['error'] ) {
-        echo 'Error: ' . $_FILES['file']['error'] . '<br>';
-    }
-    else {
-        $id =$_GET['id'];
-
-        $ext = pathinfo($_FILES['file']['name'], PATHINFO_EXTENSION);
-
-
-
-        $filename = generateRandomString($length = 20);
-
-
-        $newFileName = $filename . '.' . $ext;
-
-
-        move_uploaded_file($_FILES['file']['tmp_name'], $_SERVER['DOCUMENT_ROOT'] .  '/images/news/' . $newFileName);
-        updateNewsPhoto($id, $newFileName);
-        echo $newFileName;
-    }
-
-}
 
 //CALENDAR
 
@@ -247,7 +190,7 @@ function savecalendarchangesAction(){
 }
 
 
-function albumAction($smarty){
+function albumsAction($smarty){
     $albums = showAlbums();
     $smarty->assign('albums', $albums);
 
@@ -260,15 +203,33 @@ function albumAction($smarty){
 
 
 function addalbumAction($smarty){
-    $id = $_POST['id'];
     $title = $_POST['title'];
     $mainphoto = $_POST['mainphoto'];
 
-    $res = insertAlbum($id, $title, $mainphoto);
+    $res = insertAlbum($title, $mainphoto);
 
     if($res){
         header( "Location: /admin/album" );
     }
+}
+
+//
+function addalbumphotoAction(){
+    $id =$_GET['id'];
+    $name = $_POST['name'];
+    $size = getSize($name);
+
+    $res = addAlbumPhoto($id, $name, $size);
+
+   if($res){
+        header( "Location: /admin/editalbum/$id" );
+     }
+}
+
+function deletealbumphotoAction(){
+    $id = $_GET['id'];
+    $album_id = deleteAlbumPhoto($id);
+    header( "Location: /admin/editalbum/$album_id" );
 }
 
 
@@ -295,6 +256,29 @@ function updatealbumAction($smarty){
 }
 
 
+function videosAction($smarty){
+    $videos = showVideos();
+    $smarty->assign('videos', $videos);
+
+    loadTemplate($smarty, 'adminheader');
+    loadTemplate($smarty, 'adminvideos');
+}
+
+function addvideoAction(){
+    $title = $_POST['title'];
+    $image = $_POST['image'];
+    $link = $_POST['link'];
+    insertVideos($title, $image, $link);
+    header( "Location: /admin/videos" );
+}
+
+function deletevideoAction(){
+    $id =$_GET['id'];
+    deleteVideo($id);
+    header( "Location: /admin/videos" );
+}
+
+
 function addimageAction(){
     if ( 0 < $_FILES['file']['error'] ) {
         echo 'Error: ' . $_FILES['file']['error'] . '<br>';
@@ -316,7 +300,7 @@ function addimageAction(){
 
         $size = getimagesize($_SERVER['DOCUMENT_ROOT'] .  '/images/' . $newFileName)[0] . "x" . getimagesize($_SERVER['DOCUMENT_ROOT'] .  '/images/' . $newFileName)[1];
 
-        insertImage($newFileName);
+        insertImage($newFileName, $size);
 
 
     }

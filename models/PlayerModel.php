@@ -14,6 +14,12 @@ function showTeam($teamid){
     return createRsArray($rs);
 }
 
+function showTrainers(){
+    $sql = "SELECT * FROM `players` WHERE `position` = 'тренер' AND `team` > 5";
+    $rs = mysqli_query($_SESSION['connection'], $sql);
+    return createRsArray($rs);
+}
+
 function showStuff($teamid){
     $sql = "SELECT * FROM `players` WHERE team = $teamid AND team_id = 2";
     $rs = mysqli_query($_SESSION['connection'], $sql);

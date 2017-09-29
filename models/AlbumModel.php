@@ -35,19 +35,19 @@ function addAlbumPhoto($id, $newFileName, $size){
     return $rs;
 }
 
-function addAlbumMainPhoto($id, $newFileName){
-    
-    
-     $sql = "UPDATE `albums`
-            SET
-                `mainphoto` = '$newFileName' WHERE id=$id";
+function deleteAlbumPhoto($id){
+    $sql = "SELECT album_id FROM `albumsphoto` WHERE id = $id";
+    $album_id = mysqli_query($_SESSION['connection'], $sql);
 
-
-    
+    $sql = "DELETE FROM `albumsphoto` WHERE `id` = $id ";
     $rs = mysqli_query($_SESSION['connection'], $sql);
-    return $rs;
-}
 
+    $album_id = createRsArray($album_id);
+    foreach ($album_id as $album_id_item => $item){
+        $album_id = $item['album_id'];
+    }
+    return $album_id;
+}
     
     function insertAlbum($title, $mainphoto){
 
