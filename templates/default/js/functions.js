@@ -109,3 +109,27 @@ function addalbummainhoto(){
         alert ("Оберіть фото для завантаження!")
     }
 }
+
+function addimage(){
+    if (document.getElementById("image").value != "") {
+        var file_data = $('#image').prop('files')[0];
+        var form_data = new FormData();
+        form_data.append('file', file_data);
+        $.ajax({
+            url: '/admin/addimage',
+            dataType: 'text',
+            cache: false,
+            contentType: false,
+            processData: false,
+            data: form_data,
+            type: 'post',
+            success: function(php_script_response){
+
+                alert("Фото завантажено");
+                location.reload(true);
+            }
+        });
+    }else {
+        alert ("Оберіть фото для завантаження!")
+    }
+}

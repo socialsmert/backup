@@ -3,6 +3,7 @@
     <form method="POST" action="/admin/addnews">
 
         <input required type="text" placeholder="title" name="title"/>
+        <input required type="text" placeholder="image" value="" name="image"/>
         <input required   type="text" placeholder="date" name="date"/>
         <textarea name="text"></textarea>
         

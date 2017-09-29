@@ -16,6 +16,7 @@ function showSelectedAlbum($id){
 
 function showSelectedAlbumPhotos($id){
     $sql = "SELECT * FROM `albumsphoto` WHERE album_id = $id ORDER BY id";
+
     $rs = mysqli_query($_SESSION['connection'], $sql);
     return createRsArray($rs);
 }
@@ -48,13 +49,23 @@ function addAlbumMainPhoto($id, $newFileName){
 }
 
     
-    function insertAlbum($title){
+    function insertAlbum($title, $mainphoto){
 
     $sql = "INSERT INTO `albums`
             SET
+                `mainphoto` = '$mainphoto',
                 `title` = '$title'";
 
     $rs = mysqli_query($_SESSION['connection'], $sql);
     return $rs;
 
 }
+
+function updateAlbums($id, $title, $mainphoto){
+
+    $sql = "UPDATE `albums` SET  `title`='$title', `mainphoto`='$mainphoto' WHERE id = $id";
+    $rs = mysqli_query($_SESSION['connection'], $sql);
+    return $rs;
+
+}
+

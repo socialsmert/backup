@@ -93,14 +93,14 @@ function showSelectedNews($id){
 }
 
 
-function insertNews($title, $date, $text){
+function insertNews($title, $date, $text, $image){
 
     $sql = "INSERT INTO `news`
             SET
                 `title` = '$title',
                 `date` = '$date',
+                `image` = '$image',
                 `text` = '$text'";
-
     $rs = mysqli_query($_SESSION['connection'], $sql);
     return $rs;
 

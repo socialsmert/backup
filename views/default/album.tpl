@@ -37,8 +37,8 @@
 
 
         <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-            <a href="/images/albums/{$item['photo']}" itemprop="contentUrl" data-size="{$item['size']}">
-                <img src="/images/albums/{$item['photo']}" itemprop="thumbnail" alt="Image description" />
+            <a href="{$item['photo']}" itemprop="contentUrl" data-size="{$item['size']}">
+                <img src="{$item['photo']}" itemprop="thumbnail" alt="Image description" />
             </a>
             <figcaption itemprop="caption description"></figcaption>
 
