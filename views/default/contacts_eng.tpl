@@ -5,7 +5,7 @@
 				<div class="backgr"></div>
 				<div class="cont-text">
 					<h1 id="cont-title">
-						Контакти
+						Contacts
 					</h1>
 
 
@@ -15,7 +15,7 @@
 						</div>
 						<div class="add-right">
 							<h1>
-								Україна
+								Ukraine
 							</h1>
 						</div>
 					</div>
@@ -37,7 +37,7 @@
 						</div>
 						<div class="add-right">
 							<h1>
-								с.Щасливе вул.Лисенка 13
+								Shchaslyve Lysenka st. 13
 							</h1>
 						</div>
 					</div>

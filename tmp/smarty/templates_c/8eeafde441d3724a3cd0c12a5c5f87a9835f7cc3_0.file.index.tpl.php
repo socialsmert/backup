@@ -1,3 +1,27 @@
+<?php
+/* Smarty version 3.1.30, created on 2017-09-29 19:33:55
+  from "W:\domains\backup\views\default\index.tpl" */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.30',
+  'unifunc' => 'content_59ce75f3e19fa1_77929308',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '8eeafde441d3724a3cd0c12a5c5f87a9835f7cc3' => 
+    array (
+      0 => 'W:\\domains\\backup\\views\\default\\index.tpl',
+      1 => 1506697629,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_59ce75f3e19fa1_77929308 (Smarty_Internal_Template $_smarty_tpl) {
+?>
 
 
 <div class="section-1">
@@ -54,7 +78,7 @@
 
         <div id="s-2-content-left" class="section-2-content-left">НАШ<br>АРСЕНАЛ<br>КИЇВ</div>
         <div id="section-2-content-divider"></div>
-        <div id="s-2-content-right" class="section-2-content-right">Оновлений столичний ФК «Арсенал» – це в першу чергу, вірність традиціям. Ми ставимо перед собою ціль створити сім’ю, із футболістів та вболівальників. Опираючись на свій внутрішній ресурс, дитячо-юнацьку футбольну школу молодих «канонірів», ми продовжуємо шлях до вершин українського футболу.</div>
+        <div id="s-2-content-right" class="section-2-content-right">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur fuga, assumenda hic dolorem quibusdam placeat non atque deleniti dignissimos ex recusandae nisi, mollitia esse cupiditate maiores sapiente officiis suscipit praesentium. Lorem ipsum dolor sit amat fet</div>
 
         <a href="/" id="s-2-content-item-1" class="s-2-content-item"><img src="/images/team.png" alt="">КОМАНДА</a>
         <a href="/" id="s-2-content-item-2" class="s-2-content-item"><img src="/images/stadium.png" alt="">СТАДІОН</a>
@@ -72,24 +96,41 @@
 
             <div id="section-3-content-match-line">
 
-                {foreach $calendar as $item name=calendar}
+                <?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['calendar']->value, 'item', false, NULL, 'calendar', array (
+));
+if ($_from !== null) {
+foreach ($_from as $_smarty_tpl->tpl_vars['item']->value) {
+?>
                 <div class="section-3-content-match-item">
                     <div class="section-3-content-match-item-team">
-                        <img src="/images/teams/{$item['team1']}.png" alt=""><br>{$item['team1']}
+                        <img src="/images/teams/<?php echo $_smarty_tpl->tpl_vars['item']->value['team1'];?>
+.png" alt=""><br><?php echo $_smarty_tpl->tpl_vars['item']->value['team1'];?>
+
                     </div>
                     <div class="section-3-content-match-item-result">
 
                         РЕЗУЛЬТАТ
-                        <br><span class="score">{$item['score1']} - {$item['score2']}</span><br>
-                        <span class="date">{$item['date']}</span>
+                        <br><span class="score"><?php echo $_smarty_tpl->tpl_vars['item']->value['score1'];?>
+ - <?php echo $_smarty_tpl->tpl_vars['item']->value['score2'];?>
+</span><br>
+                        <span class="date"><?php echo $_smarty_tpl->tpl_vars['item']->value['date'];?>
+</span>
 
                     </div>
                     <div class="section-3-content-match-item-team">
-                        <img src="/images/teams/{$item['team2']}.png" alt=""><br>
-                        {$item['team2']}
+                        <img src="/images/teams/<?php echo $_smarty_tpl->tpl_vars['item']->value['team2'];?>
+.png" alt=""><br>
+                        <?php echo $_smarty_tpl->tpl_vars['item']->value['team2'];?>
+
                     </div>
                 </div>
-                {/foreach}
+                <?php
+}
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl);
+?>
+
 
 
             </div>
@@ -100,8 +141,9 @@
             інші матчі
             <button onclick="nextitem()"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
         </div>
-        {literal}
-        <script>
+        
+        <?php echo '<script'; ?>
+>
 
             var width = document.getElementById("section-3-content-match-container").offsetWidth;
             console.log(width);
@@ -115,8 +157,9 @@
 
                 document.getElementById("section-3-content-match-line").style.transform="translateX("+translate+"px)";}
 
-        </script>
-        {/literal}
+        <?php echo '</script'; ?>
+>
+        
 
     </div>
 
@@ -134,7 +177,8 @@
                 <td class="score">О</td>
             </tr>
         </table>
-        {$table}
+        <?php echo $_smarty_tpl->tpl_vars['table']->value;?>
+
 
     </div>
 
@@ -241,4 +285,5 @@
 
 
 </body>
-</html>
+</html><?php }
+}

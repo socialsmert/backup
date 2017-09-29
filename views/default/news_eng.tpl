@@ -12,7 +12,7 @@
 
             <div class="content-news-item-main-1-content">
                 <div class="content-news-item-main-1-title">
-                ГОЛОВНІ НОВИНИ</div>
+                MAIN NEWS</div>
                 <div class="content-news-item-main-1-spacer"></div>
                 <div class="content-news-item-main-1-news-title">{$item['title']}</div>
                 <div class="content-news-item-main-1-news-date">{$item['date']}</div>
@@ -93,7 +93,7 @@
 
 
     <div id="show-more">
-        <a class="show-more-button" onclick="loadnews(); return false;" href="/">ПОКАЗАТИ &nbsp;БІЛЬШЕ</a>
+        <a class="show-more-button" onclick="loadnews(); return false;" href="/">SHOW &nbsp;MORE</a>
     </div>
     
     <script>

@@ -1,26 +1,71 @@
+<?php
+/* Smarty version 3.1.30, created on 2017-09-29 19:33:55
+  from "W:\domains\backup\views\default\header.tpl" */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.30',
+  'unifunc' => 'content_59ce75f3d83e95_99748909',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    'dcf47b41aded904a5e1762b9b19c3a13706669b6' => 
+    array (
+      0 => 'W:\\domains\\backup\\views\\default\\header.tpl',
+      1 => 1506697628,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_59ce75f3d83e95_99748909 (Smarty_Internal_Template $_smarty_tpl) {
+?>
 <html>
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
 
-        <link rel="stylesheet" type="text/css" href="{$templateWebPath}css/main.css">
-        <link rel="stylesheet" href="{$templateWebPath}font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="<?php echo $_smarty_tpl->tpl_vars['templateWebPath']->value;?>
+css/main.css">
+        <link rel="stylesheet" href="<?php echo $_smarty_tpl->tpl_vars['templateWebPath']->value;?>
+font-awesome/css/font-awesome.min.css">
 
-        <script src="{$templateWebPath}js/modernizr.js"></script> <!-- Modernizr -->
-        <link rel="stylesheet" href="{$templateWebPath}css/photoswipe.css">
-        <link rel="stylesheet" href="{$templateWebPath}css/default-skin/default-skin.css">
-        <script src="{$templateWebPath}js/jquery-3.2.1.js" type="text/javascript"></script>
-        <script src="{$templateWebPath}js/functions.js" type="text/javascript"></script>
-        <script src="{$templateWebPath}js/photoswipe.min.js"></script> 
-        <script src="{$templateWebPath}js/photoswipe-ui-default.min.js">
-        </script>
+        <?php echo '<script'; ?>
+ src="<?php echo $_smarty_tpl->tpl_vars['templateWebPath']->value;?>
+js/modernizr.js"><?php echo '</script'; ?>
+> <!-- Modernizr -->
+        <link rel="stylesheet" href="<?php echo $_smarty_tpl->tpl_vars['templateWebPath']->value;?>
+css/photoswipe.css">
+        <link rel="stylesheet" href="<?php echo $_smarty_tpl->tpl_vars['templateWebPath']->value;?>
+css/default-skin/default-skin.css">
+        <?php echo '<script'; ?>
+ src="<?php echo $_smarty_tpl->tpl_vars['templateWebPath']->value;?>
+js/jquery-3.2.1.js" type="text/javascript"><?php echo '</script'; ?>
+>
+        <?php echo '<script'; ?>
+ src="<?php echo $_smarty_tpl->tpl_vars['templateWebPath']->value;?>
+js/functions.js" type="text/javascript"><?php echo '</script'; ?>
+>
+        <?php echo '<script'; ?>
+ src="<?php echo $_smarty_tpl->tpl_vars['templateWebPath']->value;?>
+js/photoswipe.min.js"><?php echo '</script'; ?>
+> 
+        <?php echo '<script'; ?>
+ src="<?php echo $_smarty_tpl->tpl_vars['templateWebPath']->value;?>
+js/photoswipe-ui-default.min.js">
+        <?php echo '</script'; ?>
+>
         <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700" rel="stylesheet">
 
-        <title>{$pageTitle}</title>
+        <title><?php echo $_smarty_tpl->tpl_vars['pageTitle']->value;?>
+</title>
     </head>
 
-    {literal}
-    <script>
+    
+    <?php echo '<script'; ?>
+>
         var vh = document.documentElement.clientHeight;
         console.log(vh);
 
@@ -63,8 +108,9 @@
             }
 
         }
-    </script>
-    {/literal}
+    <?php echo '</script'; ?>
+>
+    
 
     <body>
 
@@ -87,9 +133,9 @@
 
             </div>
             <div class="header-right">
-                <a href="https://www.youtube.com/channel/UCDmbGqu-YvtT7hjVJt2JQZg" class="header-right-item"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
-                <a href="https://www.facebook.com/arsenal1925kyiv" class="header-right-item"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                <a href="https://www.instagram.com/arsenal_kyiv_official/" class="header-right-item"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="/" class="header-right-item"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                <a href="/" class="header-right-item"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="/" class="header-right-item"><i class="fa fa-instagram" aria-hidden="true"></i></a>
 
 
             </div>
@@ -114,10 +160,12 @@
 
             </div>
             <div class="header-right">
-                <a href="https://www.youtube.com/channel/UCDmbGqu-YvtT7hjVJt2JQZg" class="header-right-item"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
-                <a href="https://www.facebook.com/arsenal1925kyiv" class="header-right-item"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                <a href="https://www.instagram.com/arsenal_kyiv_official/" class="header-right-item"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="/" class="header-right-item"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                <a href="/" class="header-right-item"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="/" class="header-right-item"><i class="fa fa-instagram" aria-hidden="true"></i></a>
 
 
             </div>
         </div>
+<?php }
+}

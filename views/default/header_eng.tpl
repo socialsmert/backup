@@ -15,7 +15,7 @@
         <script src="{$templateWebPath}js/photoswipe-ui-default.min.js">
         </script>
         <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700" rel="stylesheet">
-
+        
         <title>{$pageTitle}</title>
     </head>
 
@@ -76,13 +76,13 @@
             <div class="header-center">
 
                 <ul>
-                    <li><a href="/news">новини</a></li>
-                    <li><a href="/team">команда</a></li>
-                    <li><a href="/stadium">стадіон</a></li>
+                    <li><a href="/news">news</a></li>
+                    <li><a href="/team">team</a></li>
+                    <li><a href="/stadium">stadium</a></li>
                     <li class="li-logo"><a href="/"><img src="/images/header_logo.png" alt=""></a></li>
-                    <li><a href="/club">клуб</a></li>
-                    <li><a href="/media">медіа</a></li>
-                    <li><a href="/contacts">контакти</a></li>
+                    <li><a href="/club">club</a></li>
+                    <li><a href="/media">media</a></li>
+                    <li><a href="/contacts">contacts</a></li>
                 </ul>
 
             </div>
@@ -103,13 +103,13 @@
             <div class="header-center">
 
                 <ul>
-                    <li><a href="/news">новини</a></li>
-                    <li><a href="/team">команда</a></li>
-                    <li><a href="/stadium">стадіон</a></li>
+                    <li><a href="/news">news</a></li>
+                    <li><a href="/team">team</a></li>
+                    <li><a href="/stadium">stadium</a></li>
                     <li class="li-logo"><a href="/"><img src="/images/header_logo.png" alt=""></a></li>
-                    <li><a href="/club">клуб</a></li>
-                    <li><a href="/media">медіа</a></li>
-                    <li><a href="/contacts">контакти</a></li>
+                    <li><a href="/club">club</a></li>
+                    <li><a href="/media">media</a></li>
+                    <li><a href="/contacts">contacts</a></li>
                 </ul>
 
             </div>
@@ -117,7 +117,6 @@
                 <a href="https://www.youtube.com/channel/UCDmbGqu-YvtT7hjVJt2JQZg" class="header-right-item"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
                 <a href="https://www.facebook.com/arsenal1925kyiv" class="header-right-item"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                 <a href="https://www.instagram.com/arsenal_kyiv_official/" class="header-right-item"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-
 
             </div>
         </div>
