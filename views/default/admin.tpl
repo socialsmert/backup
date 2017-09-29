@@ -1,5 +1,6 @@
 <div class="admin-main">
-test-igor
+
+    test
     <table cellspacing="0">
         <tr>
             <td class="header" colspan="3">Керування</td>
@@ -7,7 +8,7 @@ test-igor
         </tr>
         <tr>
             <td colspan="3" class="title">Новини</td>
-            test vlad
+
         </tr>
         <tr>
             <td>Новини</td>
