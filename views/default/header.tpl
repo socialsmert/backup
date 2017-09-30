@@ -78,8 +78,8 @@
 
         <div id="header-adaptive" class="header noselect">
             <div class="header-left">
-                <a href="/" class="header-left-item-current">UA</a>
-                <a href="/" class="header-left-item">EN</a>
+                <a href="/index/ua" class="header-left-item-current">UA</a>
+                <a href="/index/en" class="header-left-item">EN</a>
             </div>
             <div class="header-center">
 
@@ -105,8 +105,8 @@
 
         <div id="header" class="header noselect">
             <div class="header-left">
-                <a href="/" class="header-left-item-current">UA</a>
-                <a href="/" class="header-left-item">EN</a>
+                <a href="/index/ua" class="header-left-item-current">UA</a>
+                <a href="/index/en" class="header-left-item">EN</a>
             </div>
             <div class="header-center">
 

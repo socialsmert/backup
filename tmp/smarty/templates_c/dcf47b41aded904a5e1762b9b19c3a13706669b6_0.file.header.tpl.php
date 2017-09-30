@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-09-30 04:36:11
+/* Smarty version 3.1.30, created on 2017-09-30 06:29:40
   from "W:\domains\backup\views\default\header.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_59cef50bcb0c42_30311217',
+  'unifunc' => 'content_59cf0fa497b599_11277431',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'dcf47b41aded904a5e1762b9b19c3a13706669b6' => 
     array (
       0 => 'W:\\domains\\backup\\views\\default\\header.tpl',
-      1 => 1506735226,
+      1 => 1506742154,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_59cef50bcb0c42_30311217 (Smarty_Internal_Template $_smarty_tpl) {
+function content_59cf0fa497b599_11277431 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <html>
     <head>
@@ -124,8 +124,8 @@ js/photoswipe-ui-default.min.js">
 
         <div id="header-adaptive" class="header noselect">
             <div class="header-left">
-                <a href="/" class="header-left-item-current">UA</a>
-                <a href="/" class="header-left-item">EN</a>
+                <a href="/index/ua" class="header-left-item-current">UA</a>
+                <a href="/index/en" class="header-left-item">EN</a>
             </div>
             <div class="header-center">
 
@@ -151,8 +151,8 @@ js/photoswipe-ui-default.min.js">
 
         <div id="header" class="header noselect">
             <div class="header-left">
-                <a href="/" class="header-left-item-current">UA</a>
-                <a href="/" class="header-left-item">EN</a>
+                <a href="/index/ua" class="header-left-item-current">UA</a>
+                <a href="/index/en" class="header-left-item">EN</a>
             </div>
             <div class="header-center">
 

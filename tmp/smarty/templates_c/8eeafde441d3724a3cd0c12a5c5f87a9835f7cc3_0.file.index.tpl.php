@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-09-30 04:20:44
+/* Smarty version 3.1.30, created on 2017-09-30 06:29:40
   from "W:\domains\backup\views\default\index.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_59cef16c67d484_75084491',
+  'unifunc' => 'content_59cf0fa4a5e3f5_20076266',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '8eeafde441d3724a3cd0c12a5c5f87a9835f7cc3' => 
     array (
       0 => 'W:\\domains\\backup\\views\\default\\index.tpl',
-      1 => 1506734442,
+      1 => 1506740502,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_59cef16c67d484_75084491 (Smarty_Internal_Template $_smarty_tpl) {
+function content_59cf0fa4a5e3f5_20076266 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <div class="omg-content" id="omg-content">
 	<div class="section-1">
@@ -144,16 +144,24 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl);
 >
 
 				var width = document.getElementById("section-3-content-match-container").offsetWidth;
-				console.log(width);
 				var translate = 0;
+				var clickleft = 0;
+				var clickright = 0;
 
 				function previtem(){
+				    if (clickleft >= 9){}else{
 					translate = translate + width;
-					document.getElementById("section-3-content-match-line").style.transform="translateX("+translate+"px)";}
+					document.getElementById("section-3-content-match-line").style.transform="translateX("+translate+"px)";
+                    clickright = clickright - 1;
+                    clickleft = clickleft + 1;}}
+
 				function nextitem(){
+				    if (clickleft <= 0){ }else {
 					translate = translate - width;
 
-					document.getElementById("section-3-content-match-line").style.transform="translateX("+translate+"px)";}
+					document.getElementById("section-3-content-match-line").style.transform="translateX("+translate+"px)";
+                    clickleft = clickleft - 1;
+                    clickright = clickright+1;}}
 
 			<?php echo '</script'; ?>
 >

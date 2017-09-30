@@ -1,7 +1,7 @@
 <?php
 
 function showCalendar(){
-    $sql = "SELECT * FROM `calendar` ORDER BY id DESC";
+    $sql = "SELECT * FROM `calendar` ORDER BY id DESC LIMIT 10";
     $rs = mysqli_query($_SESSION['connection'], $sql);
     return createRsArray($rs);
 }

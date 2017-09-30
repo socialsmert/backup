@@ -2199,12 +2199,12 @@ float: right;
 @media only screen and (max-width: 1800px){
 
 	.cat-item{
-		width: 20%;
+		width: 16.666%;
 	}
 
 
 	.player-item{
-		width: 20%;
+		width: 16.666%;
 	}
 
 
@@ -2216,12 +2216,12 @@ float: right;
 		width: 25%;
 	}
 	.cat-item{
-		width: 25%;
+		width: 20%;
 	}
 
 
 	.player-item{
-		width: 25%;
+		width: 20%;
 	}
 }
 
@@ -2233,15 +2233,15 @@ float: right;
 	}
 
 	.news-block{
-		width: 33.333%;
+		width: 25%;
 	}
 
 	.cat-item{
-		width: 33.333%;
+		width: 25%;
 	}
 
 	.player-item{
-		width: 33.333%;
+		width: 25%;
 	}
 }
 
@@ -2254,11 +2254,11 @@ float: right;
 
 
 	.cat-item{
-		width: 50%;
+		width: 33.333%;
 	}
 
 	.player-item{
-		width: 50%;
+		width: 33.333%;
 	}
 }
 

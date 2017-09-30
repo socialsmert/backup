@@ -88,16 +88,24 @@
 			<script>
 
 				var width = document.getElementById("section-3-content-match-container").offsetWidth;
-				console.log(width);
 				var translate = 0;
+				var clickleft = 0;
+				var clickright = 0;
 
 				function previtem(){
+				    if (clickleft >= 9){}else{
 					translate = translate + width;
-					document.getElementById("section-3-content-match-line").style.transform="translateX("+translate+"px)";}
+					document.getElementById("section-3-content-match-line").style.transform="translateX("+translate+"px)";
+                    clickright = clickright - 1;
+                    clickleft = clickleft + 1;}}
+
 				function nextitem(){
+				    if (clickleft <= 0){ }else {
 					translate = translate - width;
 
-					document.getElementById("section-3-content-match-line").style.transform="translateX("+translate+"px)";}
+					document.getElementById("section-3-content-match-line").style.transform="translateX("+translate+"px)";
+                    clickleft = clickleft - 1;
+                    clickright = clickright+1;}}
 
 			</script>
 			{/literal}
