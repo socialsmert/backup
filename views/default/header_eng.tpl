@@ -63,12 +63,19 @@
             }
 
         }
+		$(document).ready(function(){
+			$('#h_logo').mousedown(function (e) {
+  if(e.button == 2) { // right click
+    return false; // do nothing!
+  }
+});
+		});
     </script>
     {/literal}
 
     <body>
 
-        <div id="header-adaptive" class="header">
+        <div id="header-adaptive" class="header noselect">
             <div class="header-left">
                 <a href="/" class="header-left-item-current">UA</a>
                 <a href="/" class="header-left-item">EN</a>
@@ -79,7 +86,7 @@
                     <li><a href="/news">news</a></li>
                     <li><a href="/team">team</a></li>
                     <li><a href="/stadium">stadium</a></li>
-                    <li class="li-logo"><a href="/"><img src="/images/header_logo.png" alt=""></a></li>
+                    <li class="li-logo"><a href="/"><img id="h_logo" src="/images/header_logo.png" alt=""></a></li>
                     <li><a href="/club">club</a></li>
                     <li><a href="/media">media</a></li>
                     <li><a href="/contacts">contacts</a></li>
@@ -95,7 +102,7 @@
             </div>
         </div>
 
-        <div id="header" class="header">
+        <div id="header" class="header noselect">
             <div class="header-left">
                 <a href="/" class="header-left-item-current">UA</a>
                 <a href="/" class="header-left-item">EN</a>

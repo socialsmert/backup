@@ -63,12 +63,20 @@
             }
 
         }
+		
+		$(document).ready(function(){
+			$('#h_logo').mousedown(function (e) {
+  if(e.button == 2) { // right click
+    return false; // do nothing!
+  }
+});
+		});
     </script>
     {/literal}
 
     <body>
 
-        <div id="header-adaptive" class="header">
+        <div id="header-adaptive" class="header noselect">
             <div class="header-left">
                 <a href="/" class="header-left-item-current">UA</a>
                 <a href="/" class="header-left-item">EN</a>
@@ -79,7 +87,7 @@
                     <li><a href="/news">новини</a></li>
                     <li><a href="/team">команда</a></li>
                     <li><a href="/stadium">стадіон</a></li>
-                    <li class="li-logo"><a href="/"><img src="/images/header_logo.png" alt=""></a></li>
+                    <li class="li-logo"><a href="/"><img id="h_logo" src="/images/header_logo.png" alt=""></a></li>
                     <li><a href="/club">клуб</a></li>
                     <li><a href="/media">медіа</a></li>
                     <li><a href="/contacts">контакти</a></li>
@@ -87,15 +95,15 @@
 
             </div>
             <div class="header-right">
-                <a href="/" class="header-right-item"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
-                <a href="/" class="header-right-item"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                <a href="/" class="header-right-item"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="https://www.youtube.com/channel/UClesqzZshJuZDXOqD1LFzMA" target="_blank" class="header-right-item"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                <a href="https://www.facebook.com/arsenal1925kyiv" target="_blank" class="header-right-item"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com/arsenal_kyiv_official/" target="_blank" class="header-right-item"><i class="fa fa-instagram" aria-hidden="true"></i></a>
 
 
             </div>
         </div>
 
-        <div id="header" class="header">
+        <div id="header" class="header noselect">
             <div class="header-left">
                 <a href="/" class="header-left-item-current">UA</a>
                 <a href="/" class="header-left-item">EN</a>
@@ -106,7 +114,7 @@
                     <li><a href="/news">новини</a></li>
                     <li><a href="/team">команда</a></li>
                     <li><a href="/stadium">стадіон</a></li>
-                    <li class="li-logo"><a href="/"><img src="/images/header_logo.png" alt=""></a></li>
+                    <li class="li-logo"><a href="/"><img id="h_logo" src="/images/header_logo.png" alt=""></a></li>
                     <li><a href="/club">клуб</a></li>
                     <li><a href="/media">медіа</a></li>
                     <li><a href="/contacts">контакти</a></li>

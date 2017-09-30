@@ -45,7 +45,7 @@
 		</div>
 	</div>
 
-	<div id="s-2" class="section-2">
+	<div id="s-2" class="section-2 noselect">
 
 		<div class="section-2-content">
 
@@ -53,7 +53,7 @@
 
 			<div id="s-2-content-left" class="section-2-content-left">НАШ<br>АРСЕНАЛ<br>КИЇВ</div>
 			<div id="section-2-content-divider"></div>
-			<div id="s-2-content-right" class="section-2-content-right">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur fuga, assumenda hic dolorem quibusdam placeat non atque deleniti dignissimos ex recusandae nisi, mollitia esse cupiditate maiores sapiente officiis suscipit praesentium. Lorem ipsum dolor sit amat fet</div>
+			<div id="s-2-content-right" class="section-2-content-right">Оновлений столичний ФК «Арсенал» – це в першу чергу, вірність традиціям. Ми ставимо перед собою ціль створити сім’ю, із футболістів та вболівальників. Опираючись на свій внутрішній ресурс, дитячо-юнацьку футбольну школу молодих «канонірів», ми продовжуємо шлях до вершин українського футболу.</div>
 
 			<a href="/" id="s-2-content-item-1" class="s-2-content-item"><img src="/images/team.png" alt="">КОМАНДА</a>
 			<a href="/" id="s-2-content-item-2" class="s-2-content-item"><img src="/images/stadium.png" alt="">СТАДІОН</a>
@@ -63,7 +63,7 @@
 	</div>
 
 
-	<div class="section-3">
+	<div class="section-3 noselect">
 
 		<div class="section-3-content">
 
@@ -123,7 +123,7 @@
 
 	<div class="section-4">
 
-		<div class="section-4-content">
+		<div class="section-4-content noselect">
 			Турнірна таблиця<br>
 			<table cellspacing="0" class="tournament-table" id="head-table">
 				<tr>
@@ -234,7 +234,7 @@
 
 <div class="section-footer" id="section-footer">
 	<a id="linktotop" href="#"><i id="arr" class="fa fa-arrow-circle-up" aria-hidden="true"></i></a>	
-	<h1 id="copyr">©2017 Arsenal-Kyiv</h1>
+	<h1 class="noselect" id="copyr">©2017 Arsenal-Kyiv</h1>
 </div>
 
 <script>

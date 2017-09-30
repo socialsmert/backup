@@ -1,5 +1,5 @@
 
-
+<div class="omg-content" id="omg-content">
 <div class="section-1">
     <div id="s-1-background">
         <div id="s-1-content">
@@ -46,7 +46,7 @@
     </div>
 </div>
 
-<div id="s-2" class="section-2">
+<div id="s-2" class="section-2 noselect">
 
     <div class="section-2-content">
 
@@ -64,7 +64,7 @@
 </div>
 
 
-<div class="section-3">
+<div class="section-3 noselect">
 
     <div class="section-3-content">
 
@@ -122,7 +122,7 @@
 
 </div>
 
-<div class="section-4">
+<div class="section-4 noselect">
 
     <div class="section-4-content">
         The tournament table<br>
@@ -141,7 +141,7 @@
 </div>
 
 
-<div class="section-5">
+<div class="section-5 noselect">
 
     <div class="section-5-content">
 
@@ -231,12 +231,23 @@
 
 </div>
 
-
-<div class="section-footer">
-
-
-
 </div>
+
+
+<div class="section-footer" id="section-footer">
+	<a id="linktotop" href="#"><i id="arr" class="fa fa-arrow-circle-up" aria-hidden="true"></i></a>	
+	<h1 class="noselect" id="copyr">©2017 Arsenal-Kyiv</h1>
+</div>
+
+<script>
+	$(document).ready(function(){
+		$('#linktotop').click(function(){
+			$("html, body").animate({ scrollTop: 0 }, 'slow');
+			return false;
+		});
+		
+	});
+</script>
 
 
 
