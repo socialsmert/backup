@@ -1,4 +1,4 @@
-<div class="full-contacts">
+<div class="full-contacts noselect">
 			<div id="map"></div>
 		<div class="contacts" id="anim-mark">
 			<div class="right-cont">
