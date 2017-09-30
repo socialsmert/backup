@@ -56,50 +56,23 @@
 
             <div class="team-photo-logo">
 
-                <div class="content-team-item-main-1-title">ШКОЛА ФУТБОЛУ
-                    <a href="/school/16">U-16</a>
-                    <a href="/school/15">U-15</a>
-                    <a href="/school/14">U-14</a>
-                    <a href="/school/13">U-13</a>
-                    <a href="/school/12">U-12</a>
-                    <a href="/school/11">U-11</a>
-                    <a href="/school/10">U-10</a>
-                    <a href="/school/9">U-9</a>
-                    <a href="/school/8">U-8</a>
 
-
-                </div>
-                <div class="content-team-item-main-1-spacer"></div>
-                <br>
-                {foreach $tm as $item name=tm}
-                {$item['name']}
-                {/foreach}
 
             </div>
 
         </div>
 
-        <span><ul class="team-menu">
-
-
-            СКЛАД КОМАНДИ
-
-
-            </ul>
-        </span>
 
         <div id="team-line-id" class="team-line">
 
             <div class="cat-item">
                 <i class="fa fa-users" aria-hidden="true"></i>
-                {foreach $tm as $item name=tm}
-                {$item['name']}
-                {/foreach}
+                ТРЕНЕРИ
 
             </div>
 
 
-            {foreach $stf as $item name=stf}
+            {foreach $trainers as $item name=trainers}
             <a href="/player/{$item['id']}" class="player-item">
 
                 <div class="player-item-photo">
@@ -122,136 +95,7 @@
         </div>
 
 
-        <div class="team-line">
 
-            <div class="cat-item">
-                <i class="fa fa-child" aria-hidden="true"></i>
-                ВОРОТАРІ
-
-            </div>
-            {foreach $gk as $item name=gk}
-            <a href="/player/{$item['id']}" class="player-item">
-
-                <div class="player-item-photo">
-                    <img src="/images/players/{$item['id']}.jpeg" alt="">
-                </div>
-
-                <div class="player-item-surname">{$item['surname']}</div>
-
-
-
-
-
-                <div class="player-item-number">{$item['number']}</div>
-
-                <div class="player-item-name">{$item['name']}</div>
-
-            </a>
-            {/foreach}
-        </div>
-
-
-
-
-
-
-
-        <div class="team-line">
-
-            <div class="cat-item">
-                <i class="fa fa-shield" aria-hidden="true"></i>
-                ЗАХИСНИКИ
-
-            </div>
-            {foreach $def as $item name=def}
-            <a href="/player/{$item['id']}" class="player-item">
-
-                <div class="player-item-photo">
-                    <img src="/images/players/{$item['id']}.jpeg" alt="">
-                </div>
-
-                <div class="player-item-surname">{$item['surname']}</div>
-
-
-
-
-
-                <div class="player-item-number">{$item['number']}</div>
-
-                <div class="player-item-name">{$item['name']}</div>
-
-            </a>
-            {/foreach}
-        </div>
-
-
-
-
-
-
-
-
-        <div class="team-line">
-
-            <div class="cat-item">
-                <i class="fa fa-user" aria-hidden="true"></i>
-                ПІВЗАХИСНИКИ
-
-            </div>
-            {foreach $semdef as $item name=semdef}
-            <a href="/player/{$item['id']}" class="player-item">
-
-                <div class="player-item-photo">
-                    <img src="/images/players/{$item['id']}.jpeg" alt="">
-                </div>
-
-                <div class="player-item-surname">{$item['surname']}</div>
-
-
-
-
-
-                <div class="player-item-number">{$item['number']}</div>
-
-                <div class="player-item-name">{$item['name']}</div>
-
-            </a>
-            {/foreach}
-        </div>
-
-
-
-
-
-
-
-        <div class="team-line">
-
-            <div class="cat-item">
-                <i class="fa fa-futbol-o" aria-hidden="true"></i>
-                НАПАДНИКИ
-
-            </div>
-            {foreach $atack as $item name=atack}
-            <a href="/player/{$item['id']}" class="player-item">
-
-                <div class="player-item-photo">
-                    <img src="/images/players/{$item['id']}.jpeg" alt="">
-                </div>
-
-                <div class="player-item-surname">{$item['surname']}</div>
-
-
-
-
-
-                <div class="player-item-number">{$item['number']}</div>
-
-                <div class="player-item-name">{$item['name']}</div>
-
-            </a>
-            {/foreach}
-        </div>
 
 
 
