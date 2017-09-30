@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-09-30 02:25:31
+/* Smarty version 3.1.30, created on 2017-09-30 04:06:35
   from "W:\domains\backup\views\default\adminheader.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_59ced66b45fc30_17894980',
+  'unifunc' => 'content_59ceee1b3c2908_61658048',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '8645ef89bc7357b38aaf5b4b05a0d29fde4b1deb' => 
     array (
       0 => 'W:\\domains\\backup\\views\\default\\adminheader.tpl',
-      1 => 1506727529,
+      1 => 1506733593,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_59ced66b45fc30_17894980 (Smarty_Internal_Template $_smarty_tpl) {
+function content_59ceee1b3c2908_61658048 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <html>
     <head>
@@ -31,7 +31,7 @@ css/admin-main.css">
         <link rel="stylesheet" href="<?php echo $_smarty_tpl->tpl_vars['templateWebPath']->value;?>
 font-awesome/css/font-awesome.min.css"> <title><?php echo $_smarty_tpl->tpl_vars['pageTitle']->value;?>
 </title>
-        <link href="https://fonts.googleapis.com/css?family=Exo+2:300,400,500,600,700,800,900" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700" rel="stylesheet">
         <?php echo '<script'; ?>
  src="<?php echo $_smarty_tpl->tpl_vars['templateWebPath']->value;?>
 js/jquery-3.2.1.js" type="text/javascript"><?php echo '</script'; ?>
@@ -49,8 +49,15 @@ ckeditor/ckeditor.js" type="text/javascript"><?php echo '</script'; ?>
     </head>
     <body>
 
+    <style>
 
-    <a href="/admin/logout">exit</a>
+        a#logout{
+            display: <?php echo $_smarty_tpl->tpl_vars['displayValue']->value;?>
+;
+        }
+
+    </style>
+    <a id="logout" href="/admin/logout">exit</a>
 
 
        <?php }

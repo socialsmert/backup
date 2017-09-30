@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-09-30 02:10:55
+/* Smarty version 3.1.30, created on 2017-09-30 02:35:11
   from "W:\domains\backup\views\default\index.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_59ced2ffa3e596_31409141',
+  'unifunc' => 'content_59ced8afbdc621_44568764',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '8eeafde441d3724a3cd0c12a5c5f87a9835f7cc3' => 
     array (
       0 => 'W:\\domains\\backup\\views\\default\\index.tpl',
-      1 => 1506726631,
+      1 => 1506728098,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_59ced2ffa3e596_31409141 (Smarty_Internal_Template $_smarty_tpl) {
+function content_59ced8afbdc621_44568764 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <div class="omg-content" id="omg-content">
 	<div class="section-1">
@@ -277,8 +277,8 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl);
 
 
 <div class="section-footer" id="section-footer">
-	<a id="linktotop" href="#">AAAA</a>	
-	<h1>©2017 Arsenal-Kyiv</h1>
+	<a id="linktotop" href="#"><i id="arr" class="fa fa-arrow-circle-up" aria-hidden="true"></i></a>	
+	<h1 id="copyr">©2017 Arsenal-Kyiv</h1>
 </div>
 
 <?php echo '<script'; ?>
@@ -288,6 +288,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl);
 			$("html, body").animate({ scrollTop: 0 }, 'slow');
 			return false;
 		});
+		
 	});
 <?php echo '</script'; ?>
 >

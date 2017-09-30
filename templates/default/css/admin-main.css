@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
 }
 
 body{
@@ -40,3 +41,261 @@ td.header{
     background: #16b273;
 }
 
+
+
+.adm-login{
+    padding-top: calc(50vh - 300px);
+    width: 100%;
+    height: 100vh;
+    background: #0e0e0e;
+}
+
+.adm-login-box{
+    color: white;
+    font-weight: 500;
+    text-align: left;
+    margin: 0 auto;
+    width: 800px;
+    height: 600px;
+    xbackground: brown;
+}
+
+.adm-login-box input{
+    padding-left: 20px;
+    text-transform: lowercase;
+    font-size: 17px;
+    background: transparent;
+    color: white;
+    margin: 0 auto;
+    margin-bottom: 7px;
+    border: none;
+    outline: none;
+    display: block;
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #a2a5aa;
+}
+
+.adm-login-box input::placeholder {
+    color: white;
+}
+
+.adm-login-box-left, .adm-login-box-right{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+
+.adm-login-box-right{
+    padding-left: 40px;
+    padding-right: 40px;
+    background: #43464b;
+}
+.adm-login-box-left{
+    padding-left: 30px;
+    padding-top: 25px;
+    background: #f8f9fd;
+}
+
+
+.adm-login-box-right span{
+    font-size: 25px;
+    width: 100%;
+    margin-top: 108px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.adm-login-box input.sub{
+    padding-left: 0;
+    height: 48px;
+    border-radius: 4px;
+    font-size: 15px;
+    margin-top: 30px;
+    background: #44c8ba;
+    border: none;
+    text-transform: uppercase;
+}
+
+.adm-login-box-right span.s2{
+    font-size: 16px;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+
+a.exit{
+    color: white;
+    text-align: center;
+    line-height: 48px;
+    text-decoration: none;
+    display: block;
+    height: 48px;
+    border-radius: 4px;
+    font-size: 15px;
+    margin-top: 15px;
+    border: 1px solid #72757a;
+    text-transform: uppercase;
+}
+
+.fig-1{
+    width: 70px;
+    height: 70px;
+    background: #44c8ba;
+}
+
+.fig-2{
+    width: 230px;
+    height: 19px;
+    margin-top: 25px;
+    background: #55585d;
+}
+
+.fig-3{
+    width: 340px;
+    height: 8px;
+    margin-top: 12px;
+    background: #c8cbd0;
+}
+
+.fig-4{
+    width: 320px;
+    height: 8px;
+    margin-top: 10px;
+    background: #c8cbd0;
+}
+
+.fig-5{
+    width: 330px;
+    height: 8px;
+    margin-top: 10px;
+    background: #c8cbd0;
+}
+
+.fig-6{
+    width: 240px;
+    height: 8px;
+    margin-top: 10px;
+    background: #c8cbd0;
+}
+
+.fig-7{
+    width: 140px;
+    height: 12px;
+    margin-top: 45px;
+    background: #44c8ba;
+}
+
+.fig-8{
+    width: 80px;
+    height: 9px;
+    margin-top: 20px;
+    background: #999da6;
+}
+
+.fig-9{
+    margin-left: 7px;
+    width: 110px;
+    height: 9px;
+    margin-top: 12px;
+    background: #c8cbd0;
+}
+
+
+.fig-10{
+    margin-left: 7px;
+    width: 160px;
+    height: 9px;
+    margin-top: 7px;
+    background: #c8cbd0;
+}
+
+
+.fig-11{
+    margin-left: 7px;
+    width: 140px;
+    height: 9px;
+    margin-top: 7px;
+    background: #c8cbd0;
+}
+
+
+
+.fig-12{
+    width: 160px;
+    height: 9px;
+    margin-top: 20px;
+    background: #999da6;
+}
+
+.fig-13{
+    margin-left: 7px;
+    width: 40px;
+    height: 9px;
+    margin-top: 12px;
+    background: #c8cbd0;
+}
+
+
+.fig-14{
+    margin-left: 7px;
+    width: 60px;
+    height: 9px;
+    margin-top: 7px;
+    background: #c8cbd0;
+}
+
+
+.fig-15{
+    margin-left: 7px;
+    width: 120px;
+    height: 9px;
+    margin-top: 7px;
+    background: #c8cbd0;
+}
+
+.fig-16{
+    width: 150px;
+    height: 9px;
+    margin-top: 20px;
+    background: #999da6;
+}
+
+
+
+.fig-17{
+    margin-left: 7px;
+    width: 60px;
+    height: 9px;
+    margin-top: 12px;
+    background: #c8cbd0;
+}
+
+
+.fig-18{
+    margin-left: 7px;
+    width: 50px;
+    height: 9px;
+    margin-top: 7px;
+    background: #c8cbd0;
+}
+
+
+.fig-19{
+    margin-left: 7px;
+    width: 35px;
+    height: 9px;
+    margin-top: 7px;
+    background: #c8cbd0;
+}
+
+.fig-20{
+    margin-left: 7px;
+    width: 80px;
+    height: 9px;
+    margin-top: 7px;
+    background: #c8cbd0;
+}

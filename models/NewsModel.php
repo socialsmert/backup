@@ -7,26 +7,14 @@ function showNews($limit1){
 
 }
 
-function showMainNews1(){
-    $sql = "SELECT * FROM `news` WHERE display = 1 ORDER BY id DESC LIMIT 0, 1";
+function showMainNews(){
+    $sql = "SELECT * FROM `news` WHERE display = 1 ORDER BY id DESC LIMIT 0, 3";
     $rs = mysqli_query($_SESSION['connection'], $sql);
     return createRsArray($rs);
 
 }
 
-function showMainNews2(){
-    $sql = "SELECT * FROM `news` WHERE display = 1 ORDER BY id DESC LIMIT 1, 1";
-    $rs = mysqli_query($_SESSION['connection'], $sql);
-    return createRsArray($rs);
 
-}
-
-function showMainNews3(){
-    $sql = "SELECT * FROM `news` WHERE display = 1 ORDER BY id DESC LIMIT 2, 1";
-    $rs = mysqli_query($_SESSION['connection'], $sql);
-    return createRsArray($rs);
-
-}
 
 function showMoreNews($limit1){
     $sql = "SELECT * FROM `news` WHERE display = 1 ORDER BY id DESC LIMIT $limit1, 16";
