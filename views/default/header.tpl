@@ -103,9 +103,10 @@
                 <ul>
                     <li><a href="/news">новини</a></li>
                     <li><a href="/team">команда</a></li>
-                    <li><a href="/stadium">стадіон</a></li>
+                   <li><a href="/club">клуб</a></li>
                     <li class="li-logo"><a href="/"><img id="h_logo" src="/images/header_logo.png" alt=""></a></li>
-                    <li><a href="/club">клуб</a></li>
+                    
+                     <li><a href="/stadium">стадіон</a></li>
                     <li><a href="/media">медіа</a></li>
                     <li><a href="/contacts">контакти</a></li>
                 </ul>
@@ -128,11 +129,12 @@
             <div class="header-center">
 
                 <ul>
+                   
                     <li><a href="/news">новини</a></li>
                     <li><a href="/team">команда</a></li>
-                    <li><a href="/stadium">стадіон</a></li>
-                    <li class="li-logo"><a href="/"><img id="h_logo" src="/images/header_logo.png" alt=""></a></li>
                     <li><a href="/club">клуб</a></li>
+                    <li class="li-logo"><a href="/"><img id="h_logo" src="/images/header_logo.png" alt=""></a></li>
+                   <li><a href="/stadium">стадіон</a></li>
                     <li><a href="/media">медіа</a></li>
                     <li><a href="/contacts">контакти</a></li>
                 </ul>
