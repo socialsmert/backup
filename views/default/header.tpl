@@ -38,6 +38,38 @@
 
     {literal}
     <script>
+
+
+        function showteamadd(){
+            document.getElementById("team-menu").style.display="block";
+            document.getElementById("team-li").style.background="#e5e5e5";
+        }
+        function hideteamadd(){
+            document.getElementById("team-menu").style.display="none";
+            document.getElementById("team-li").style.background="white";
+        }
+
+        function showclubadd(){
+            document.getElementById("club-menu").style.display="block";
+            document.getElementById("club-li").style.background="#e5e5e5";
+        }
+        function hideclubadd(){
+            document.getElementById("club-menu").style.display="none";
+            document.getElementById("club-li").style.background="white";
+        }
+
+        function showmediaadd(){
+            document.getElementById("media-menu").style.display="block";
+            document.getElementById("media-li").style.background="#e5e5e5";
+        }
+        function hidemediaadd(){
+            document.getElementById("media-menu").style.display="none";
+            document.getElementById("media-li").style.background="white";
+        }
+
+
+
+
         var vh = document.documentElement.clientHeight;
         console.log(vh);
 
@@ -71,14 +103,6 @@
 
 
 
-
-
-            if (scrolled >= 0.4*vh){
-                document.getElementById("header-adaptive").style.height="100px";
-            }else{
-                document.getElementById("header-adaptive").style.height="0px";
-            }
-
         }
 		
 		$(document).ready(function(){
@@ -93,56 +117,75 @@
 
     <body>
 
-        <div id="header-adaptive" class="header noselect">
-            <div class="header-left">
-                <a href="/index/ua" class="header-left-item-current">UA</a>
-                <a href="/index/en" class="header-left-item">EN</a>
-            </div>
-            <div class="header-center">
-
-                <ul>
-                    <li><a href="/news">новини</a></li>
-                    <li><a href="/team">команда</a></li>
-                    <li><a href="/stadium">стадіон</a></li>
-                    <li class="li-logo"><a href="/"><img id="h_logo" src="/images/header_logo.png" alt=""></a></li>
-                    <li><a href="/club">клуб</a></li>
-                    <li><a href="/media">медіа</a></li>
-                    <li><a href="/contacts">контакти</a></li>
-                </ul>
-
-            </div>
-            <div class="header-right">
-                <a href="https://www.youtube.com/channel/UClesqzZshJuZDXOqD1LFzMA" target="_blank" class="header-right-item"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
-                <a href="https://www.facebook.com/arsenal1925kyiv" target="_blank" class="header-right-item"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                <a href="https://www.instagram.com/arsenal_kyiv_official/" target="_blank" class="header-right-item"><i class="fa fa-instagram" aria-hidden="true"></i></a>
 
 
-            </div>
+    <div class="menu-area">
+
+        <img src="/images/logoindex.png" alt="">
+
+        <ul class="main-menu">
+            <li><a href="/">ГОЛОВНА</a></li>
+            <li><a href="/news">НОВИНИ</a></li>
+            <li id="team-li" onmouseover="showteamadd()" onmouseout="hideteamadd()"><a href="/team">КОМАНДА</a></li>
+            <li><a href="/school">ШК. ФУТБОЛУ</a></li>
+            <li id="club-li" onmouseover="showclubadd()" onmouseout="hideclubadd()"><a href="/club">КЛУБ</a></li>
+            <li><a href="/matches">МАТЧІ</a></li>
+
+            <li id="media-li" onmouseover="showmediaadd()" onmouseout="hidemediaadd()"><a href="/media">МЕДІА</a></li>
+            <li><a href="/contacts">КОНТАКТИ</a></li>
+        </ul>
+
+
+        <ul class="bottom-menu">
+            <li>МОВА</li>
+            <li><a href="/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="/"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+            </li>
+        </ul>
+
+
+        <div onmouseover="showteamadd()" onmouseout="hideteamadd()" id="team-menu" class="add-menu">
+
+
+
+            <ul>
+                <li><i class="fa fa-users" aria-hidden="true"></i></li>
+                <li><a href="/team/1">АРСЕНАЛ-КИЇВ</a></li>
+                <li><a href="/team/2">U-19</a></li>
+            </ul>
         </div>
 
-        <div id="header" class="header noselect">
-            <div class="header-left">
-                <a href="/index/ua" class="header-left-item-current">UA</a>
-                <a href="/index/en" class="header-left-item">EN</a>
-            </div>
-            <div class="header-center">
-
-                <ul>
-                    <li><a href="/news">новини</a></li>
-                    <li><a href="/team">команда</a></li>
-                    <li><a href="/stadium">стадіон</a></li>
-                    <li class="li-logo"><a href="/"><img id="h_logo" src="/images/header_logo.png" alt=""></a></li>
-                    <li><a href="/club">клуб</a></li>
-                    <li><a href="/media">медіа</a></li>
-                    <li><a href="/contacts">контакти</a></li>
-                </ul>
-
-            </div>
-            <div class="header-right">
-                <a href="https://www.youtube.com/channel/UClesqzZshJuZDXOqD1LFzMA" target="_blank" class="header-right-item"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
-                <a href="https://www.facebook.com/arsenal1925kyiv" target="_blank" class="header-right-item"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                <a href="https://www.instagram.com/arsenal_kyiv_official/" target="_blank" class="header-right-item"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        <div  onmouseover="showclubadd()" onmouseout="hideclubadd()" id="club-menu" class="add-menu">
 
 
-            </div>
+
+            <ul>
+                <li><i class="fa fa-shield" aria-hidden="true"></i></li>
+                <li><a href="/club/history">ІСТОРІЯ</a></li>
+                <li><a href="/club/achievments">ДОСЯГНЕННЯ</a></li>
+                <li><a href="/club/philosophy">ФІЛОСОФІЯ</a></li>
+                <li><a href="/club/management">МЕНЕДЖМЕНТ</a></li>
+            </ul>
         </div>
+
+        <div  onmouseover="showmediaadd()" onmouseout="hidemediaadd()" id="media-menu" class="add-menu">
+
+
+
+            <ul>
+                <li><i class="fa fa-youtube-play" aria-hidden="true"></i></li>
+                <li><a href="/media/photo">ФОТО</a></li>
+                <li><a href="/media/video">ВІДЕО</a></li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="content-area">
+
+
+
+
+
+
+

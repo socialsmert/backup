@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-09-30 06:29:40
+/* Smarty version 3.1.30, created on 2017-09-30 18:22:32
   from "W:\domains\backup\views\default\index.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_59cf0fa4a5e3f5_20076266',
+  'unifunc' => 'content_59cfb6b83bbfc4_42004973',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '8eeafde441d3724a3cd0c12a5c5f87a9835f7cc3' => 
     array (
       0 => 'W:\\domains\\backup\\views\\default\\index.tpl',
-      1 => 1506740502,
+      1 => 1506745607,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_59cf0fa4a5e3f5_20076266 (Smarty_Internal_Template $_smarty_tpl) {
+function content_59cfb6b83bbfc4_42004973 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <div class="omg-content" id="omg-content">
 	<div class="section-1">
@@ -78,8 +78,8 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl);
 			<div id="section-2-content-divider"></div>
 			<div id="s-2-content-right" class="section-2-content-right">Оновлений столичний ФК «Арсенал» – це в першу чергу, вірність традиціям. Ми ставимо перед собою ціль створити сім’ю, із футболістів та вболівальників. Опираючись на свій внутрішній ресурс, дитячо-юнацьку футбольну школу молодих «канонірів», ми продовжуємо шлях до вершин українського футболу.</div>
 
-			<a href="/" id="s-2-content-item-1" class="s-2-content-item"><img src="/images/team.png" alt="">КОМАНДА</a>
-			<a href="/" id="s-2-content-item-2" class="s-2-content-item"><img src="/images/stadium.png" alt="">СТАДІОН</a>
+			<a href="/team" id="s-2-content-item-1" class="s-2-content-item"><img src="/images/team.png" alt="">КОМАНДА</a>
+			<a href="/stadium" id="s-2-content-item-2" class="s-2-content-item"><img src="/images/stadium.png" alt="">СТАДІОН</a>
 
 		</div>
 
@@ -199,7 +199,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl);
 				<input type="radio" name="radio-btn" id="img-1" checked />
 				<li class="slide-container">
 					<div class="slide">
-						<img src="https://onehdwallpaper.com/wp-content/uploads/2016/07/Most-Beautiful-Baby-Animal-Desktop-Wallpaper.jpg" />
+						<img src="/images/slider/5.JPG" />
 					</div>
 					<div class="nav">
 						<label for="img-6" class="prev">&#x2039;</label>
@@ -210,7 +210,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl);
 				<input type="radio" name="radio-btn" id="img-2" />
 				<li class="slide-container">
 					<div class="slide">
-						<img src="https://lh3.googleusercontent.com/38AA1f5CWFkZYjnAQmAn2jVzuLBCE0DLtrBUVyRCKZQ1Kfy1lVr28Sq-zOYd7OrSQA=h900" />
+						<img src="/images/slider/6.JPG" />
 					</div>
 					<div class="nav">
 						<label for="img-1" class="prev">&#x2039;</label>
