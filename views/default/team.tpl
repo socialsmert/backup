@@ -42,7 +42,7 @@
 </div>
 -->
 
-    <div class="team-page-content">
+    <div class="team-page-content noselect">
 
         <div class="team-photo">
 

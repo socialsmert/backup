@@ -929,6 +929,12 @@ input#img-6:checked ~ .nav-dots label#img-dot-6 {
 	cursor: pointer;
 	padding: 5px;
 	font-size: 25px;
+	transition: .4s;
+	
+}
+#history-slide-header a:hover{
+	font-size: 30px;
+
 }
 
 .history-slide-header:hover{
@@ -1513,9 +1519,14 @@ float: right;
 .content-team-item-main-1-title a{
 	padding-left: 10px;
 	color: #ff0000;
+	transition: 0.4s;
+	
 }
 
-
+.content-team-item-main-1-title a:hover{
+	color: red;
+	
+}
 
 
 .content-team-item-main-1-spacer{
@@ -2098,8 +2109,7 @@ float: right;
 
 	.player-item{
 		min-width: 375px;
-
-	}
+}
 
 	.stadium-content-block-content{
 		width: 375px;

@@ -1,7 +1,7 @@
 
 
 
-<div class="stadium-content">
+<div class="stadium-content noselect">
 
     
         <div class="stadium-content-block-content">
