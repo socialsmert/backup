@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-09-29 19:33:55
+/* Smarty version 3.1.30, created on 2017-09-30 04:11:24
   from "W:\domains\backup\views\default\header.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_59ce75f3d83e95_99748909',
+  'unifunc' => 'content_59ceef3c9e6326_84826227',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'dcf47b41aded904a5e1762b9b19c3a13706669b6' => 
     array (
       0 => 'W:\\domains\\backup\\views\\default\\header.tpl',
-      1 => 1506697628,
+      1 => 1506733857,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_59ce75f3d83e95_99748909 (Smarty_Internal_Template $_smarty_tpl) {
+function content_59ceef3c9e6326_84826227 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <html>
     <head>
@@ -108,13 +108,21 @@ js/photoswipe-ui-default.min.js">
             }
 
         }
+		
+		$(document).ready(function(){
+			$('#h_logo').mousedown(function (e) {
+  if(e.button == 2) { // right click
+    return false; // do nothing!
+  }
+});
+		});
     <?php echo '</script'; ?>
 >
     
 
     <body>
 
-        <div id="header-adaptive" class="header">
+        <div id="header-adaptive" class="header noselect">
             <div class="header-left">
                 <a href="/" class="header-left-item-current">UA</a>
                 <a href="/" class="header-left-item">EN</a>
@@ -125,7 +133,7 @@ js/photoswipe-ui-default.min.js">
                     <li><a href="/news">новини</a></li>
                     <li><a href="/team">команда</a></li>
                     <li><a href="/stadium">стадіон</a></li>
-                    <li class="li-logo"><a href="/"><img src="/images/header_logo.png" alt=""></a></li>
+                    <li class="li-logo"><a href="/"><img id="h_logo" src="/images/header_logo.png" alt=""></a></li>
                     <li><a href="/club">клуб</a></li>
                     <li><a href="/media">медіа</a></li>
                     <li><a href="/contacts">контакти</a></li>
@@ -133,15 +141,15 @@ js/photoswipe-ui-default.min.js">
 
             </div>
             <div class="header-right">
-                <a href="/" class="header-right-item"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
-                <a href="/" class="header-right-item"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                <a href="/" class="header-right-item"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="https://www.youtube.com/channel/UClesqzZshJuZDXOqD1LFzMA" target="_blank" class="header-right-item"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                <a href="https://www.facebook.com/arsenal1925kyiv" target="_blank" class="header-right-item"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com/arsenal_kyiv_official/" target="_blank" class="header-right-item"><i class="fa fa-instagram" aria-hidden="true"></i></a>
 
 
             </div>
         </div>
 
-        <div id="header" class="header">
+        <div id="header" class="header noselect">
             <div class="header-left">
                 <a href="/" class="header-left-item-current">UA</a>
                 <a href="/" class="header-left-item">EN</a>
@@ -152,7 +160,7 @@ js/photoswipe-ui-default.min.js">
                     <li><a href="/news">новини</a></li>
                     <li><a href="/team">команда</a></li>
                     <li><a href="/stadium">стадіон</a></li>
-                    <li class="li-logo"><a href="/"><img src="/images/header_logo.png" alt=""></a></li>
+                    <li class="li-logo"><a href="/"><img id="h_logo" src="/images/header_logo.png" alt=""></a></li>
                     <li><a href="/club">клуб</a></li>
                     <li><a href="/media">медіа</a></li>
                     <li><a href="/contacts">контакти</a></li>

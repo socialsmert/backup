@@ -6,8 +6,8 @@ include "models/NewsModel.php";
 
 function indexAction($smarty){
 
-    
-        $news = showMainNews();
+
+        $news = showMainNewsIndex();
 
 
         $calendar = showCalendar();

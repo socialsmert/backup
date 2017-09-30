@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-09-30 02:35:11
+/* Smarty version 3.1.30, created on 2017-09-30 04:11:24
   from "W:\domains\backup\views\default\index.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_59ced8afbdc621_44568764',
+  'unifunc' => 'content_59ceef3cac95b1_12552597',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '8eeafde441d3724a3cd0c12a5c5f87a9835f7cc3' => 
     array (
       0 => 'W:\\domains\\backup\\views\\default\\index.tpl',
-      1 => 1506728098,
+      1 => 1506733857,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_59ced8afbdc621_44568764 (Smarty_Internal_Template $_smarty_tpl) {
+function content_59ceef3cac95b1_12552597 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <div class="omg-content" id="omg-content">
 	<div class="section-1">
@@ -69,7 +69,7 @@ function content_59ced8afbdc621_44568764 (Smarty_Internal_Template $_smarty_tpl)
 		</div>
 	</div>
 
-	<div id="s-2" class="section-2">
+	<div id="s-2" class="section-2 noselect">
 
 		<div class="section-2-content">
 
@@ -77,7 +77,7 @@ function content_59ced8afbdc621_44568764 (Smarty_Internal_Template $_smarty_tpl)
 
 			<div id="s-2-content-left" class="section-2-content-left">НАШ<br>АРСЕНАЛ<br>КИЇВ</div>
 			<div id="section-2-content-divider"></div>
-			<div id="s-2-content-right" class="section-2-content-right">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur fuga, assumenda hic dolorem quibusdam placeat non atque deleniti dignissimos ex recusandae nisi, mollitia esse cupiditate maiores sapiente officiis suscipit praesentium. Lorem ipsum dolor sit amat fet</div>
+			<div id="s-2-content-right" class="section-2-content-right">Оновлений столичний ФК «Арсенал» – це в першу чергу, вірність традиціям. Ми ставимо перед собою ціль створити сім’ю, із футболістів та вболівальників. Опираючись на свій внутрішній ресурс, дитячо-юнацьку футбольну школу молодих «канонірів», ми продовжуємо шлях до вершин українського футболу.</div>
 
 			<a href="/" id="s-2-content-item-1" class="s-2-content-item"><img src="/images/team.png" alt="">КОМАНДА</a>
 			<a href="/" id="s-2-content-item-2" class="s-2-content-item"><img src="/images/stadium.png" alt="">СТАДІОН</a>
@@ -87,7 +87,7 @@ function content_59ced8afbdc621_44568764 (Smarty_Internal_Template $_smarty_tpl)
 	</div>
 
 
-	<div class="section-3">
+	<div class="section-3 noselect">
 
 		<div class="section-3-content">
 
@@ -166,7 +166,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl);
 
 	<div class="section-4">
 
-		<div class="section-4-content">
+		<div class="section-4-content noselect">
 			Турнірна таблиця<br>
 			<table cellspacing="0" class="tournament-table" id="head-table">
 				<tr>
@@ -278,7 +278,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl);
 
 <div class="section-footer" id="section-footer">
 	<a id="linktotop" href="#"><i id="arr" class="fa fa-arrow-circle-up" aria-hidden="true"></i></a>	
-	<h1 id="copyr">©2017 Arsenal-Kyiv</h1>
+	<h1 class="noselect" id="copyr">©2017 Arsenal-Kyiv</h1>
 </div>
 
 <?php echo '<script'; ?>
