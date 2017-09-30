@@ -9,35 +9,21 @@
                 <div class="s-1-content-left-title">Main news</div>
                 <div class="s-1-content-left-date"><a href="/news">to all news</a></div>
 
-                <a href="/" class="s-1-content-left-news-item">
 
-                    <img src="/images/IMG_6540-2.jpg" alt="">
+                {foreach $news as $item name=news}
 
-                    <div class="s-1-content-left-news-item-overflow">
-                        <div class="s-1-content-left-news-item-date">19 вересня 2017</div>
-                        <div class="s-1-content-left-news-item-title">Заголовок новини про новий матч</div>
-                    </div>
-                </a>
 
-                <a href="/" class="s-1-content-left-news-item">
+                    <a href="/article/{$item['id']}" class="s-1-content-left-news-item">
 
-                    <img src="/images/IMG_6540-2.jpg" alt="">
+                        <img src="{$item['image']}" alt="">
 
-                    <div class="s-1-content-left-news-item-overflow">
-                        <div class="s-1-content-left-news-item-date">19 вересня 2017</div>
-                        <div class="s-1-content-left-news-item-title">Заголовок новини про новий матч</div>
-                    </div>
-                </a>
+                        <div class="s-1-content-left-news-item-overflow">
+                            <div class="s-1-content-left-news-item-date">{$item['date']}</div>
+                            <div class="s-1-content-left-news-item-title">{$item['title']}</div>
+                        </div>
+                    </a>
 
-                <a href="/" class="s-1-content-left-news-item">
-
-                    <img src="/images/IMG_6540-2.jpg" alt="">
-
-                    <div class="s-1-content-left-news-item-overflow">
-                        <div class="s-1-content-left-news-item-date">19 вересня 2017</div>
-                        <div class="s-1-content-left-news-item-title">Заголовок новини про новий матч</div>
-                    </div>
-                </a>
+                {/foreach}
 
 
             </div>
