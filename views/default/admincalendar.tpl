@@ -2,7 +2,7 @@
 <br>
     
     <br>
-  <br>  <br>
+  <br>
 
     {foreach $calendar as $item name=calendar}
     <input oninput="saveCalendarChanges()" id="calendar-id" type="hidden" value="{$item['id']}">
@@ -14,6 +14,6 @@
     <input oninput="saveCalendarChanges()" id="calendar-score2" type="text" value="{$item['score2']}">
     <input oninput="saveCalendarChanges()" id="calendar-day" type="text" value="{$item['day']}">
     <input oninput="saveCalendarChanges()" id="calendar-month" type="text" value="{$item['month']}">
-    <a href="/admin/deletecalendar/{$item['id']}">-</a>
+    <a href="/admin/deletecalendar/{$item['id']}">Видалити</a><br>
     {/foreach}
 </div>

@@ -20,7 +20,7 @@
         }
 
     </style>
-    <a id="logout" href="/admin/logout">exit</a>
+
 
 
        

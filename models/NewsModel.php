@@ -118,9 +118,9 @@ function deleteNews($id){
 }
 
 
-function updateNews($id, $title, $date, $text){
+function updateNews($id, $title, $date, $text, $image){
 
-    $sql = "UPDATE `news` SET  `title`='$title',`date`='$date',`text`='$text' WHERE id = $id";
+    $sql = "UPDATE `news` SET  `title`='$title',`date`='$date',`text`='$text', `image` = '$image' WHERE id = $id";
     $rs = mysqli_query($_SESSION['connection'], $sql);
     return $rs;
 

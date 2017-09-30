@@ -1,7 +1,15 @@
+<style>
+
+    body{
+        background: #2d3134;
+    }
+
+</style>
+
 <div class="admin-main">
     <table cellspacing="0">
         <tr>
-            <td class="header" colspan="3">Керування</td>
+            <td class="header" colspan="3">Керування <a id="logout" href="/admin/logout">Вийти</a></td>
             
         </tr>
         <tr>
@@ -10,7 +18,7 @@
         </tr>
         <tr>
             <td>Новини</td>
-            <td><a href="/admin/newarticle">+ Додати</a></td>
+            <td><a href="/admin/createnews">+ Додати</a></td>
             <td><a href="/admin/news">Переглянути</a></td>
         </tr>
         <tr>
@@ -19,13 +27,13 @@
         </tr>
         <tr>
             <td>Альбоми</td>
-            <td>+ Додати</td>
+            <td><a href="/admin/albums">+ Додати</a></td>
             <td><a href="/admin/albums">Переглянути</a></td>
         </tr>
         <tr>
             <td>Відео</td>
-            <td>+ Додати</td>
-            <td>Переглянути</td>
+            <td><a href="/admin/videos">+ Додати</a></td>
+            <td><a href="/admin/videos">Переглянути</a></td>
         </tr>
         <tr>
            <td colspan="3" class="title">Календар матчів</td>
@@ -41,7 +49,7 @@
         </tr>
         <tr>
             <td>Фото</td>
-            <td>+ Додати</td>
+            <td><a href="/admin/images">+ Додати</a></td>
             <td><a href="/admin/images">Переглянути</a></td>
         </tr>
     

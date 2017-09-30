@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-09-30 04:11:24
+/* Smarty version 3.1.30, created on 2017-09-30 04:36:11
   from "W:\domains\backup\views\default\header.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_59ceef3c9e6326_84826227',
+  'unifunc' => 'content_59cef50bcb0c42_30311217',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'dcf47b41aded904a5e1762b9b19c3a13706669b6' => 
     array (
       0 => 'W:\\domains\\backup\\views\\default\\header.tpl',
-      1 => 1506733857,
+      1 => 1506735226,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_59ceef3c9e6326_84826227 (Smarty_Internal_Template $_smarty_tpl) {
+function content_59cef50bcb0c42_30311217 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <html>
     <head>
@@ -168,9 +168,9 @@ js/photoswipe-ui-default.min.js">
 
             </div>
             <div class="header-right">
-                <a href="/" class="header-right-item"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
-                <a href="/" class="header-right-item"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                <a href="/" class="header-right-item"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="https://www.youtube.com/channel/UClesqzZshJuZDXOqD1LFzMA" target="_blank" class="header-right-item"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                <a href="https://www.facebook.com/arsenal1925kyiv" target="_blank" class="header-right-item"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com/arsenal_kyiv_official/" target="_blank" class="header-right-item"><i class="fa fa-instagram" aria-hidden="true"></i></a>
 
 
             </div>

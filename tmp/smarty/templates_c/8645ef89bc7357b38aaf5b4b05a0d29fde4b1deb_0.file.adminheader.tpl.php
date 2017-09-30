@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-09-30 04:06:35
+/* Smarty version 3.1.30, created on 2017-09-30 05:38:39
   from "W:\domains\backup\views\default\adminheader.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_59ceee1b3c2908_61658048',
+  'unifunc' => 'content_59cf03af22a1f6_25276483',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '8645ef89bc7357b38aaf5b4b05a0d29fde4b1deb' => 
     array (
       0 => 'W:\\domains\\backup\\views\\default\\adminheader.tpl',
-      1 => 1506733593,
+      1 => 1506739118,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_59ceee1b3c2908_61658048 (Smarty_Internal_Template $_smarty_tpl) {
+function content_59cf03af22a1f6_25276483 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <html>
     <head>
@@ -57,7 +57,7 @@ ckeditor/ckeditor.js" type="text/javascript"><?php echo '</script'; ?>
         }
 
     </style>
-    <a id="logout" href="/admin/logout">exit</a>
+
 
 
        <?php }

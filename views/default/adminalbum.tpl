@@ -1,17 +1,17 @@
-<div class="admin-fullpage">
+<div class="admin-addnews">
 
     <form method="POST" action="/admin/addalbum">
 
-        <input required type="text" placeholder="title" name="title"/>
-        <input required type="text" placeholder="mainphoto" value="" name="mainphoto"/>
-        <input type="submit" value="+"/>
+        <input required type="text" placeholder="Заголовок" name="title"/>
+        <input required type="text" placeholder="Головне фото" value="" name="mainphoto"/>
+        <input type="submit" value="Додати"/>
 
     </form>
 
     {foreach $albums as $item name=albums}
-        <a href="/admin/editalbum/{$item['id']}">
+        <a  class="alb-item" href="/admin/editalbum/{$item['id']}">
 
-            <img src="{$item['mainphoto']}" alt=""> - {$item['title']}
+            <img src="{$item['mainphoto']}" alt="">  {$item['title']}
 
         </a>
 

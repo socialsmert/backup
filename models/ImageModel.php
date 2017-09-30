@@ -11,7 +11,7 @@ function insertImage($name, $size){
 
     $sql = "INSERT INTO `images`
             SET
-                `name` = '$name',
+                `name` = '/images/$name',
                 `size` = '$size'";
 
     $rs = mysqli_query($_SESSION['connection'], $sql);

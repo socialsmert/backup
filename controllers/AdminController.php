@@ -82,6 +82,12 @@ function imagesAction($smarty){
 
 //NEWS
 
+
+function createnewsAction($smarty){
+    loadTemplate($smarty, 'adminheader');
+    loadTemplate($smarty, 'adminaddnews');
+}
+
 function newsAction($smarty){
     if ($_SESSION['login'] == 1){
     $news = showAllNews();
@@ -142,8 +148,9 @@ function updatenewsAction()
     $title = $_POST['title'];
     $date = $_POST['date'];
     $text = $_POST['text'];
+        $image = $_POST['image'];
 
-    $res = updateNews($id, $title, $date, $text);
+    $res = updateNews($id, $title, $date, $text, $image);
 
     header( "Location: /admin/news" );
 
@@ -312,7 +319,7 @@ function addalbumAction($smarty){
     $res = insertAlbum($title, $mainphoto);
 
     if($res){
-        header( "Location: /admin/album" );
+        header( "Location: /admin/albums" );
     }
     }else{
         header( "Location: /admin" );
