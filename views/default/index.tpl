@@ -5,9 +5,9 @@
 
 				<div class="s-1-content-left">
 
-					<div class="s-1-content-left-title">Головні новини</div>
-					<div class="s-1-content-left-date"><a href="/news">перейти до всіх новин</a></div>
-                    {foreach $news as $item name=news}
+					<div class="s-1-content-left-title animated fadeInDown">Головні новини</div>
+					<div class="s-1-content-left-date animated fadeInDown"><a href="/news">перейти до всіх новин</a></div>
+					{foreach $news as $item name=news}
 
 
 					<a href="/article/{$item['id']}" class="s-1-content-left-news-item">
@@ -226,8 +226,8 @@
 
 
 <div class="section-footer" id="section-footer">
-	<a id="linktotop" href="#"><i id="arr" class="fa fa-arrow-circle-up" aria-hidden="true"></i></a>	
-	<h1 class="noselect" id="copyr">©2017 Arsenal-Kyiv</h1>
+	<a id="linktotop" href="#"><i id="arr" class="fa fa-arrow-circle-up animated fadeInDown" aria-hidden="true"></i></a>	
+	<h1 class="animated fadeInDown noselect" id="copyr">©2017 Arsenal-Kyiv</h1>
 </div>
 
 <script>
@@ -236,8 +236,19 @@
 			$("html, body").animate({ scrollTop: 0 }, 'slow');
 			return false;
 		});
-		
 	});
+	
+	$(window).scroll(function() { 
+if ($(this).scrollTop()> (100%-180px) { 
+$('#copyr').fadeIn(); 
+} else { 
+$('#copyr').fadeOut(); 
+} 
+});
+	
+	var a = $(document).height();
+	alert(a);
+
 </script>
 
 
