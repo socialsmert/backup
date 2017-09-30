@@ -7,36 +7,21 @@
 
 					<div class="s-1-content-left-title">Головні новини</div>
 					<div class="s-1-content-left-date"><a href="/news">перейти до всіх новин</a></div>
+                    {foreach $news as $item name=news}
 
-					<a href="/" class="s-1-content-left-news-item">
 
-						<img src="/images/IMG_6540-2.jpg" alt="">
+					<a href="/article/{$item['id']}" class="s-1-content-left-news-item">
+
+						<img src="{$item['image']}" alt="">
 
 						<div class="s-1-content-left-news-item-overflow">
-							<div class="s-1-content-left-news-item-date">19 вересня 2017</div>
-							<div class="s-1-content-left-news-item-title">Заголовок новини про новий матч</div>
+							<div class="s-1-content-left-news-item-date">{$item['date']}</div>
+							<div class="s-1-content-left-news-item-title">{$item['title']}</div>
 						</div>
 					</a>
 
-					<a href="/" class="s-1-content-left-news-item">
+					{/foreach}
 
-						<img src="/images/IMG_6540-2.jpg" alt="">
-
-						<div class="s-1-content-left-news-item-overflow">
-							<div class="s-1-content-left-news-item-date">19 вересня 2017</div>
-							<div class="s-1-content-left-news-item-title">Заголовок новини про новий матч</div>
-						</div>
-					</a>
-
-					<a href="/" class="s-1-content-left-news-item">
-
-						<img src="/images/IMG_6540-2.jpg" alt="">
-
-						<div class="s-1-content-left-news-item-overflow">
-							<div class="s-1-content-left-news-item-date">19 вересня 2017</div>
-							<div class="s-1-content-left-news-item-title">Заголовок новини про новий матч</div>
-						</div>
-					</a>
 
 
 				</div>

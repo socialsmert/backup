@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-09-30 04:11:24
+/* Smarty version 3.1.30, created on 2017-09-30 04:20:44
   from "W:\domains\backup\views\default\index.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_59ceef3cac95b1_12552597',
+  'unifunc' => 'content_59cef16c67d484_75084491',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '8eeafde441d3724a3cd0c12a5c5f87a9835f7cc3' => 
     array (
       0 => 'W:\\domains\\backup\\views\\default\\index.tpl',
-      1 => 1506733857,
+      1 => 1506734442,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_59ceef3cac95b1_12552597 (Smarty_Internal_Template $_smarty_tpl) {
+function content_59cef16c67d484_75084491 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <div class="omg-content" id="omg-content">
 	<div class="section-1">
@@ -31,36 +31,35 @@ function content_59ceef3cac95b1_12552597 (Smarty_Internal_Template $_smarty_tpl)
 
 					<div class="s-1-content-left-title">Головні новини</div>
 					<div class="s-1-content-left-date"><a href="/news">перейти до всіх новин</a></div>
+                    <?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['news']->value, 'item', false, NULL, 'news', array (
+));
+if ($_from !== null) {
+foreach ($_from as $_smarty_tpl->tpl_vars['item']->value) {
+?>
 
-					<a href="/" class="s-1-content-left-news-item">
 
-						<img src="/images/IMG_6540-2.jpg" alt="">
+					<a href="/article/<?php echo $_smarty_tpl->tpl_vars['item']->value['id'];?>
+" class="s-1-content-left-news-item">
+
+						<img src="<?php echo $_smarty_tpl->tpl_vars['item']->value['image'];?>
+" alt="">
 
 						<div class="s-1-content-left-news-item-overflow">
-							<div class="s-1-content-left-news-item-date">19 вересня 2017</div>
-							<div class="s-1-content-left-news-item-title">Заголовок новини про новий матч</div>
+							<div class="s-1-content-left-news-item-date"><?php echo $_smarty_tpl->tpl_vars['item']->value['date'];?>
+</div>
+							<div class="s-1-content-left-news-item-title"><?php echo $_smarty_tpl->tpl_vars['item']->value['title'];?>
+</div>
 						</div>
 					</a>
 
-					<a href="/" class="s-1-content-left-news-item">
+					<?php
+}
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl);
+?>
 
-						<img src="/images/IMG_6540-2.jpg" alt="">
 
-						<div class="s-1-content-left-news-item-overflow">
-							<div class="s-1-content-left-news-item-date">19 вересня 2017</div>
-							<div class="s-1-content-left-news-item-title">Заголовок новини про новий матч</div>
-						</div>
-					</a>
-
-					<a href="/" class="s-1-content-left-news-item">
-
-						<img src="/images/IMG_6540-2.jpg" alt="">
-
-						<div class="s-1-content-left-news-item-overflow">
-							<div class="s-1-content-left-news-item-date">19 вересня 2017</div>
-							<div class="s-1-content-left-news-item-title">Заголовок новини про новий матч</div>
-						</div>
-					</a>
 
 
 				</div>
