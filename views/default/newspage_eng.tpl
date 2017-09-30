@@ -10,7 +10,7 @@
 
 
         <div class="selected-news-photo">
-            <img src="/images/news/{$item['photo']}" alt="">
+            <img src="{$item['image']}" alt="">
         </div>
 
         <div class="selected-news-title">

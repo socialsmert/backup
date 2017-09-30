@@ -1,7 +1,7 @@
 <div class="admin-addnews">
 
 {foreach $albums as $item name=albums}
-    <form method="POST" action="/admin/editalbum/{$item['id']}">
+    <form method="POST" action="/admin/updatealbum/{$item['id']}">
 
         <input required  class="inpt" type="text" placeholder="Заголовок" value="{$item['title']}" name="title"/>
         <input required  class="inpt" type="text" placeholder="Посилання на головне фото" value="{$item['mainphoto']}" name="mainphoto"/>

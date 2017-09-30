@@ -382,7 +382,7 @@ function updatealbumAction($smarty){
     $title = $_POST['title'];
     $mainphoto = $_POST['mainphoto'];
     updateAlbums($id, $title, $mainphoto);
-    header( "Location: /admin/album" );
+    header( "Location: /admin/albums" );
     }else{
         header( "Location: /admin" );
     }

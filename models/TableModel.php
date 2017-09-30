@@ -19,10 +19,10 @@ function showTable(){
 
 
 function showTableEng(){
-    require('Library/simple_html_dom.php');
+    require('library/simple_html_dom.php');
     $html = file_get_html('http://www.football.ua/');
 
-    $htmlcontent = $html->find('table[class=tournament-table]',2);
+    $htmlcontent = $html->find('table[class=tournament-table]',1);
     $rus = array("Арсенал-Киев","Полтава","Гелиос","Оболонь-Бровар","Колос","Ингулец","Десна","Николаев","Балканы","Жемчужина","Авангард","Нафтовик-Укрнафта","Сумы","Горняк-Спорт","Черкасский Днепр","Рух","Кремень","Волынь");
     $ukr = array("Арсенал-Київ", "Полтава","Геліос","Оболонь-Бровар","Колос","Інгулець","Десна","Миколаїв","Балкани","Жемчужина","Авангард","Нафтовик-Укрнафта","Суми","Гірник-Спорт","Черкаський Дніпро","Рух","Кремінь","Волинь");
     $eng = array("Arsenal-Kyiv","Poltava","Gelios","Obolon-Brovar","Kolos","Ingulets","Desna","Mykolayiv","Balkany","Zhemchuzhyna","Avangard","Naftovyk-Ukrnafta","Sumy","Girnyk-Sport","Сherkasʹkyy Dnipro","Rukh","Kremin'","Volyn'");

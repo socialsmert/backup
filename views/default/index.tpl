@@ -40,8 +40,8 @@
 			<div id="section-2-content-divider"></div>
 			<div id="s-2-content-right" class="section-2-content-right">Оновлений столичний ФК «Арсенал» – це в першу чергу, вірність традиціям. Ми ставимо перед собою ціль створити сім’ю, із футболістів та вболівальників. Опираючись на свій внутрішній ресурс, дитячо-юнацьку футбольну школу молодих «канонірів», ми продовжуємо шлях до вершин українського футболу.</div>
 
-			<a href="/" id="s-2-content-item-1" class="s-2-content-item"><img src="/images/team.png" alt="">КОМАНДА</a>
-			<a href="/" id="s-2-content-item-2" class="s-2-content-item"><img src="/images/stadium.png" alt="">СТАДІОН</a>
+			<a href="/team" id="s-2-content-item-1" class="s-2-content-item"><img src="/images/team.png" alt="">КОМАНДА</a>
+			<a href="/stadium" id="s-2-content-item-2" class="s-2-content-item"><img src="/images/stadium.png" alt="">СТАДІОН</a>
 
 		</div>
 
@@ -141,7 +141,7 @@
 				<input type="radio" name="radio-btn" id="img-1" checked />
 				<li class="slide-container">
 					<div class="slide">
-						<img src="https://onehdwallpaper.com/wp-content/uploads/2016/07/Most-Beautiful-Baby-Animal-Desktop-Wallpaper.jpg" />
+						<img src="/images/slider/5.JPG" />
 					</div>
 					<div class="nav">
 						<label for="img-6" class="prev">&#x2039;</label>
@@ -152,7 +152,7 @@
 				<input type="radio" name="radio-btn" id="img-2" />
 				<li class="slide-container">
 					<div class="slide">
-						<img src="https://lh3.googleusercontent.com/38AA1f5CWFkZYjnAQmAn2jVzuLBCE0DLtrBUVyRCKZQ1Kfy1lVr28Sq-zOYd7OrSQA=h900" />
+						<img src="/images/slider/6.JPG" />
 					</div>
 					<div class="nav">
 						<label for="img-1" class="prev">&#x2039;</label>

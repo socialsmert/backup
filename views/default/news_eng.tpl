@@ -7,7 +7,7 @@
  {foreach $mainnews1 as $item name=mainnews1}
         <a href="/article/{$item['id']}" class="content-news-item-main-1">
 
-            <img src='/images/news/{$item['photo']}' alt=''>
+            <img src='{$item['image']}' alt=''>
 
 
             <div class="content-news-item-main-1-content">
@@ -24,7 +24,7 @@
  {foreach $mainnews2 as $item name=mainnews2}
         <a href="/article/{$item['id']}" class="content-news-item-main-2">
 
-            <img src='/images/news/{$item['photo']}' alt=''>
+            <img src='{$item['image']}' alt=''>
 
             <div class="content-news-item-main-1-content">
 
@@ -38,7 +38,7 @@
  {foreach $mainnews3 as $item name=mainnews3}
         <a href="/article/{$item['id']}" class="content-news-item-main-3">
 
-            <img src='/images/news/{$item['photo']}' alt=''>
+            <img src='{$item['image']}' alt=''>
 
 
             <div class="content-news-item-main-1-content">
@@ -67,7 +67,7 @@
 
         <a class='news-block' href='/article/{$item['id']}'>
 
-            <img src='/images/news/{$item['photo']}' alt=''>
+            <img src='{$item['image']}' alt=''>
 
 
             <div class='news-block-content'>

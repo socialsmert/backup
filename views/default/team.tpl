@@ -1,7 +1,7 @@
 <style>
 
     .team-photo{
-        background-image: url(http://www.arsenal-kyiv.com/uploads/media/team/0001/04/thumb_3643_team_big.jpeg);
+        background-image: url(/images/{foreach $tm as $item name=tm}{$item['photo']}{/foreach});
     }
 
     .content-team-item-main-1-title a{

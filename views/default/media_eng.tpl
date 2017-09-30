@@ -11,7 +11,7 @@
     {foreach $albums as $item name=albums}
     <a href="/album/{$item['id']}" class="album-item">
         
-        <img src="/images/albums/{$item['mainphoto']}" alt="">
+        <img src="{$item['mainphoto']}" alt="">
         <div class="album-item-info">
             
             {$item['title']}
@@ -29,7 +29,7 @@
     {foreach $videos as $item name=videos}
     <a href="/video/{$item['id']}" class="album-item">
         
-        <img src="/images/videos/{$item['image']}" alt="">
+        <img src="{$item['image']}" alt="">
         <div class="album-item-info-video">
             <i class="fa fa-youtube-play" aria-hidden="true"></i><br>
             {$item['title']}

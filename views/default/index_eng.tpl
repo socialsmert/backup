@@ -42,8 +42,8 @@
         <div id="section-2-content-divider"></div>
         <div id="s-2-content-right" class="section-2-content-right">The updated capital's FC Arsenal is faithful to the traditions. We set ourselves the goal of creating a family of football players and fans. Relying on our internal resource, the children's and youth football school of young "gunners", we continue our way to the top of Ukrainian football.</div>
 
-        <a href="/" id="s-2-content-item-1" class="s-2-content-item"><img src="/images/team.png" alt="">TEAM</a>
-        <a href="/" id="s-2-content-item-2" class="s-2-content-item"><img src="/images/stadium.png" alt="">STADIUM</a>
+        <a href="/team" id="s-2-content-item-1" class="s-2-content-item"><img src="/images/team.png" alt="">TEAM</a>
+        <a href="/stadium" id="s-2-content-item-2" class="s-2-content-item"><img src="/images/stadium.png" alt="">STADIUM</a>
 
     </div>
 
