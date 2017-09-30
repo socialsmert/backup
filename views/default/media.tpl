@@ -3,7 +3,7 @@
 </style>
 
 
-<div class="album-page">
+<div class="album-page noselect">
     <div class="content-album-item-main-1-title">фото галерея</div>
     <div class="content-album-item-main-1-spacer"></div>
     

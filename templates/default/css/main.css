@@ -809,7 +809,8 @@ input#img-6:checked ~ .nav-dots label#img-dot-6 {
 	}
 }
 #arr:hover{
-	animation: bounce 2s infinite;	
+	animation: bounce 2s infinite;
+	color: blue;
 }
 
 /*STADIUM*/

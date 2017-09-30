@@ -46,7 +46,7 @@
 </script>
 
 
-<div class="club-page">
+<div class="club-page noselect">
 
 
 
