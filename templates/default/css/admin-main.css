@@ -18,6 +18,16 @@ body{
 
 }
 
+.news-item-title{
+    float: left;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+    height: 30px;
+    line-height: 30px;
+}
+
 .admin-main td{
     padding-top: 10px;
     padding-bottom: 10px;
@@ -325,8 +335,9 @@ padding: 20px;
 }
 
 .news-item{
+    min-width: 200px;
     padding-right: 10px;
-    line-height: 70px;
+
     text-align: left;
     padding-left: 10px;
     margin-bottom: 10px;
@@ -346,7 +357,13 @@ padding: 20px;
 }
 
 .news-item a{
-    float: right;
+
+    line-height: 30px;
+    height: 30px;
+
+display: inline-block;
+
+
 }
 
 .admin-addnews{

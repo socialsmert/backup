@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-09-30 18:22:32
+/* Smarty version 3.1.30, created on 2017-10-01 05:32:29
   from "W:\domains\backup\views\default\index.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_59cfb6b83bbfc4_42004973',
+  'unifunc' => 'content_59d053bd9291c3_47796409',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '8eeafde441d3724a3cd0c12a5c5f87a9835f7cc3' => 
     array (
       0 => 'W:\\domains\\backup\\views\\default\\index.tpl',
-      1 => 1506745607,
+      1 => 1506825147,
       2 => 'file',
     ),
   ),
@@ -20,8 +20,43 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_59cfb6b83bbfc4_42004973 (Smarty_Internal_Template $_smarty_tpl) {
+function content_59d053bd9291c3_47796409 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
+
+<?php echo '<script'; ?>
+>
+window.onscroll = function() {
+var scrolled = window.pageYOffset || document.documentElement.scrollTop;
+document.getElementById("s-1-background").style.transform = "translateY(-"+scrolled/6+"px)";
+document.getElementById("s-1-content").style.transform = "translateY("+scrolled/6+"px)";
+
+
+
+if (scrolled >= 0.4*vh){
+document.getElementById("s-2-content-scroll").style.visibility="hidden";
+document.getElementById("s-2-content-left").style.opacity="1";
+document.getElementById("s-2-content-left").style.transform="translateX(0px)";
+document.getElementById("section-2-content-divider").style.opacity="1";
+}
+
+if (scrolled >= 0.5*vh){
+document.getElementById("s-2-content-right").style.opacity="1";
+document.getElementById("s-2-content-right").style.transform="translateX(0px)";
+}
+
+if (scrolled >= 0.5*vh){
+document.getElementById("s-2-content-item-2").style.transform="translateY(0px)";
+}
+
+if (scrolled >= 0.5*vh){
+document.getElementById("s-2-content-item-1").style.transform="translateY(0px)";
+}
+}
+
+<?php echo '</script'; ?>
+>
+
+
 <div class="omg-content" id="omg-content">
 	<div class="section-1">
 		<div id="s-1-background">
@@ -29,9 +64,9 @@ function content_59cfb6b83bbfc4_42004973 (Smarty_Internal_Template $_smarty_tpl)
 
 				<div class="s-1-content-left">
 
-					<div class="s-1-content-left-title">Головні новини</div>
-					<div class="s-1-content-left-date"><a href="/news">перейти до всіх новин</a></div>
-                    <?php
+					<div class="s-1-content-left-title animated fadeInDown">Головні новини</div>
+					<div class="s-1-content-left-date animated fadeInDown"><a href="/news">перейти до всіх новин</a></div>
+					<?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['news']->value, 'item', false, NULL, 'news', array (
 ));
 if ($_from !== null) {
@@ -283,10 +318,10 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl);
 </div>
 
 
-<div class="section-footer" id="section-footer">
-	<a id="linktotop" href="#"><i id="arr" class="fa fa-arrow-circle-up" aria-hidden="true"></i></a>	
-	<h1 class="noselect" id="copyr">©2017 Arsenal-Kyiv</h1>
-</div>
+<!--<div class="section-footer" id="section-footer">
+	<a id="linktotop" href="#"><i id="arr" class="fa fa-arrow-circle-up animated fadeInDown" aria-hidden="true"></i></a>
+	<h1 class="animated fadeInDown noselect" id="copyr">©2017 Arsenal-Kyiv</h1>
+</div>-->
 
 <?php echo '<script'; ?>
 >
@@ -295,8 +330,19 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl);
 			$("html, body").animate({ scrollTop: 0 }, 'slow');
 			return false;
 		});
-		
 	});
+	
+	$(window).scroll(function() { 
+if ($(this).scrollTop()> (100%-180px) { 
+$('#copyr').fadeIn(); 
+} else { 
+$('#copyr').fadeOut(); 
+} 
+});
+	
+	var a = $(document).height();
+	alert(a);
+
 <?php echo '</script'; ?>
 >
 

@@ -1,3 +1,36 @@
+{literal}
+<script>
+window.onscroll = function() {
+var scrolled = window.pageYOffset || document.documentElement.scrollTop;
+document.getElementById("s-1-background").style.transform = "translateY(-"+scrolled/6+"px)";
+document.getElementById("s-1-content").style.transform = "translateY("+scrolled/6+"px)";
+
+
+
+if (scrolled >= 0.4*vh){
+document.getElementById("s-2-content-scroll").style.visibility="hidden";
+document.getElementById("s-2-content-left").style.opacity="1";
+document.getElementById("s-2-content-left").style.transform="translateX(0px)";
+document.getElementById("section-2-content-divider").style.opacity="1";
+}
+
+if (scrolled >= 0.5*vh){
+document.getElementById("s-2-content-right").style.opacity="1";
+document.getElementById("s-2-content-right").style.transform="translateX(0px)";
+}
+
+if (scrolled >= 0.5*vh){
+document.getElementById("s-2-content-item-2").style.transform="translateY(0px)";
+}
+
+if (scrolled >= 0.5*vh){
+document.getElementById("s-2-content-item-1").style.transform="translateY(0px)";
+}
+}
+
+</script>
+{/literal}
+
 <div class="omg-content" id="omg-content">
 	<div class="section-1">
 		<div id="s-1-background">
@@ -225,10 +258,10 @@
 </div>
 
 
-<div class="section-footer" id="section-footer">
-	<a id="linktotop" href="#"><i id="arr" class="fa fa-arrow-circle-up animated fadeInDown" aria-hidden="true"></i></a>	
+<!--<div class="section-footer" id="section-footer">
+	<a id="linktotop" href="#"><i id="arr" class="fa fa-arrow-circle-up animated fadeInDown" aria-hidden="true"></i></a>
 	<h1 class="animated fadeInDown noselect" id="copyr">©2017 Arsenal-Kyiv</h1>
-</div>
+</div>-->
 
 <script>
 	$(document).ready(function(){

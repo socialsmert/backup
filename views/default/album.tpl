@@ -19,23 +19,23 @@
 
         {/foreach}</div>
     <div class="content-album-item-main-1-spacer"></div>
-    
 
-      
+
+
 
         <div id="selected-album-gallery" class="album-gallery">
     <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
-        
-
-        {foreach $photos as $item name=photos}
-        
-        
-        <div id="selected-album-gallery-item" class="album-gallery-item">
 
 
 
 
 
+
+
+
+
+
+            {foreach $photos as $item name=photos}
         <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
             <a href="{$item['photo']}" itemprop="contentUrl" data-size="{$item['size']}">
                 <img src="{$item['photo']}" itemprop="thumbnail" alt="Image description" />
@@ -43,10 +43,10 @@
             <figcaption itemprop="caption description"></figcaption>
 
         </figure>
-        
-        </div>
+            {/foreach}
 
-        {/foreach}
+
+
 
 
     </div>

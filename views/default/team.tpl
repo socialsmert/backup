@@ -25,7 +25,16 @@
 
 <div class="team-page">
 
+    <div class="add-content-menu">
 
+
+
+        <ul>
+            <li class="head-img"><i class="fa fa-users" aria-hidden="true"></i></li>
+            <li><a href="/team/1">АРСЕНАЛ-КИЇВ</a></li>
+            <li><a href="/team/2">U-19</a></li>
+        </ul>
+    </div>
 
     <!--
 <div class="add-menu">
@@ -48,40 +57,15 @@
 
 
 
-            <div class="team-photo-logo">
 
-                <div class="content-team-item-main-1-title">КОМАНДИ
-
-                    <a href="/team/1">АРСЕНАЛ-КИЇВ</a>
-                    <a href="/team/2">U-19</a>
-
-                </div>
-                <div class="content-team-item-main-1-spacer"></div>
-
-                {foreach $tm as $item name=tm}
-                {$item['name']}
-                {/foreach}
-
-            </div>
 
         </div>
 
-        <span><ul class="team-menu">
-
-
-            СКЛАД КОМАНДИ
-
-
-            </ul>
-        </span>
 
         <div id="team-line-id" class="team-line">
 
             <div class="cat-item">
-                <i class="fa fa-users" aria-hidden="true"></i>
-                {foreach $tm as $item name=tm}
-                {$item['name']}
-                {/foreach}
+                Склад команди
 
             </div>
 
@@ -112,8 +96,8 @@
         <div class="team-line">
 
             <div class="cat-item">
-                <i class="fa fa-child" aria-hidden="true"></i>
-                ВОРОТАРІ
+
+                Воротарі
 
             </div>
             {foreach $gk as $item name=gk}
@@ -146,8 +130,8 @@
         <div class="team-line">
 
             <div class="cat-item">
-                <i class="fa fa-shield" aria-hidden="true"></i>
-                ЗАХИСНИКИ
+
+                Захисники
 
             </div>
             {foreach $def as $item name=def}
@@ -181,8 +165,8 @@
         <div class="team-line">
 
             <div class="cat-item">
-                <i class="fa fa-user" aria-hidden="true"></i>
-                ПІВЗАХИСНИКИ
+
+                Півзахисники
 
             </div>
             {foreach $semdef as $item name=semdef}
@@ -215,8 +199,8 @@
         <div class="team-line">
 
             <div class="cat-item">
-                <i class="fa fa-futbol-o" aria-hidden="true"></i>
-                НАПАДНИКИ
+
+                Нападники
 
             </div>
             {foreach $atack as $item name=atack}

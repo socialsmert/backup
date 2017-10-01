@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-09-30 18:23:46
+/* Smarty version 3.1.30, created on 2017-10-01 10:45:47
   from "W:\domains\backup\views\default\header.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_59cfb7026a3694_80609875',
+  'unifunc' => 'content_59d09d2b96e422_08144768',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'dcf47b41aded904a5e1762b9b19c3a13706669b6' => 
     array (
       0 => 'W:\\domains\\backup\\views\\default\\header.tpl',
-      1 => 1506785023,
+      1 => 1506843945,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_59cfb7026a3694_80609875 (Smarty_Internal_Template $_smarty_tpl) {
+function content_59d09d2b96e422_08144768 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <html>
     <head>
@@ -75,7 +75,7 @@ js/photoswipe-ui-default.min.js">
         <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
         <meta name="theme-color" content="#ffffff">
         <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700" rel="stylesheet">
-
+        <link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet">
         <title><?php echo $_smarty_tpl->tpl_vars['pageTitle']->value;?>
 </title>
     </head>
@@ -84,10 +84,18 @@ js/photoswipe-ui-default.min.js">
     <?php echo '<script'; ?>
 >
 
+        function shownewsadd(){
+            document.getElementById("news-menu").style.display="block";
+            document.getElementById("news-li").style.background="#f2f2f2";
+        }
+        function hidenewsadd(){
+            document.getElementById("news-menu").style.display="none";
+            document.getElementById("news-li").style.background="white";
+        }
 
         function showteamadd(){
             document.getElementById("team-menu").style.display="block";
-            document.getElementById("team-li").style.background="#e5e5e5";
+            document.getElementById("team-li").style.background="#f2f2f2";
         }
         function hideteamadd(){
             document.getElementById("team-menu").style.display="none";
@@ -96,7 +104,7 @@ js/photoswipe-ui-default.min.js">
 
         function showclubadd(){
             document.getElementById("club-menu").style.display="block";
-            document.getElementById("club-li").style.background="#e5e5e5";
+            document.getElementById("club-li").style.background="#f2f2f2";
         }
         function hideclubadd(){
             document.getElementById("club-menu").style.display="none";
@@ -105,50 +113,37 @@ js/photoswipe-ui-default.min.js">
 
         function showmediaadd(){
             document.getElementById("media-menu").style.display="block";
-            document.getElementById("media-li").style.background="#e5e5e5";
+            document.getElementById("media-li").style.background="#f2f2f2";
         }
         function hidemediaadd(){
             document.getElementById("media-menu").style.display="none";
             document.getElementById("media-li").style.background="white";
         }
 
+        function showlangadd(){
+            document.getElementById("lang-li").style.width="100%";
+            document.getElementById("lang-li").style.opacity="1";
+            document.getElementById("lang-li").style.border="none";
+            document.getElementById("lang-li").style.lineHeight="27px";
+            document.getElementById("lang-menu").style.display="block";
+            document.getElementById("lang-li").style.background="#f2f2f2";
+        }
+        function hidelangadd(){
+            document.getElementById("lang-li").style.width="auto";
+            document.getElementById("lang-li").style.opacity="0.8";
+            document.getElementById("lang-li").style.border="1px solid rgba(0,0,0,0.25)";
+            document.getElementById("lang-li").style.lineHeight="25px";
+            document.getElementById("lang-menu").style.display="none";
+            document.getElementById("lang-li").style.background="white";
+        }
+
 
 
 
         var vh = document.documentElement.clientHeight;
-        console.log(vh);
-
-        window.onscroll = function() {
-            var scrolled = window.pageYOffset || document.documentElement.scrollTop;
-            console.log(scrolled);
-            document.getElementById("s-1-background").style.transform = "translateY(-"+scrolled/6+"px)";
-            document.getElementById("s-1-content").style.transform = "translateY("+scrolled/6+"px)";
 
 
 
-            if (scrolled >= 0.4*vh){
-                document.getElementById("s-2-content-scroll").style.visibility="hidden";
-                document.getElementById("s-2-content-left").style.opacity="1";
-                document.getElementById("s-2-content-left").style.transform="translateX(0px)";
-                document.getElementById("section-2-content-divider").style.opacity="1";
-            }
-
-            if (scrolled >= 0.5*vh){
-                document.getElementById("s-2-content-right").style.opacity="1";
-                document.getElementById("s-2-content-right").style.transform="translateX(0px)";
-            }
-
-            if (scrolled >= 0.5*vh){
-                document.getElementById("s-2-content-item-2").style.transform="translateY(0px)";
-            }
-
-            if (scrolled >= 0.5*vh){
-                document.getElementById("s-2-content-item-1").style.transform="translateY(0px)";
-            }
-
-
-
-        }
 		
 		$(document).ready(function(){
 			$('#h_logo').mousedown(function (e) {
@@ -167,28 +162,89 @@ js/photoswipe-ui-default.min.js">
 
     <div class="menu-area">
 
-        <img src="/images/logoindex.png" alt="">
+        <img src="/images/menu-logo.png" alt="">
 
         <ul class="main-menu">
             <li><a href="/">ГОЛОВНА</a></li>
-            <li><a href="/news">НОВИНИ</a></li>
+            <li id="news-li" onmouseover="shownewsadd()" onmouseout="hidenewsadd()"><a href="/news">НОВИНИ</a></li>
             <li id="team-li" onmouseover="showteamadd()" onmouseout="hideteamadd()"><a href="/team">КОМАНДА</a></li>
-            <li><a href="/school">ШК. ФУТБОЛУ</a></li>
+            <li id="macthes-li"><a href="/matches">МАТЧІ</a></li>
+            <li><a href="/stadium">СТАДІОН</a></li>
+            <li id="school-li"><a href="/school">ДЮШС</a></li>
             <li id="club-li" onmouseover="showclubadd()" onmouseout="hideclubadd()"><a href="/club">КЛУБ</a></li>
-            <li><a href="/matches">МАТЧІ</a></li>
+
 
             <li id="media-li" onmouseover="showmediaadd()" onmouseout="hidemediaadd()"><a href="/media">МЕДІА</a></li>
-            <li><a href="/contacts">КОНТАКТИ</a></li>
+            <li id="contacts-li"><a href="/contacts">КОНТАКТИ</a></li>
         </ul>
 
 
         <ul class="bottom-menu">
-            <li>МОВА</li>
-            <li><a href="/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                <a href="/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <li  id="lang-li" class="lang">УКРАЇНСЬКА</li>
+            <li> <a href="/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+
+                <a href="/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+
                 <a href="/"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
             </li>
         </ul>
+
+
+
+    </div>
+    <div class="content-area">
+
+
+        <?php echo '<script'; ?>
+>
+            
+            var togg = 0;
+            function togglemenu() {
+                if (togg == 0){
+                var x = document.getElementsByClassName("hidden");
+                var i;
+
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "block";
+                }
+
+                togg = 1;
+            }else if (togg == 1){
+
+
+                    var x = document.getElementsByClassName("hidden");
+                    var i;
+
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+
+                    togg = 0;
+
+                }
+            }
+            
+        <?php echo '</script'; ?>
+>
+
+
+        <div class="mobile-menu">
+
+            <ul>
+                <li class="head"><a href="/" onclick="togglemenu(); return false;"><i class="fa fa-bars" aria-hidden="true"></i></a> <img src="/images/logoindex.png" alt=""></li>
+                <li class="hidden"><a href="/">ГОЛОВНА</a></li>
+                <li class="hidden"><a href="/news">НОВИНИ</a></li>
+                <li class="hidden"><a href="/team">КОМАНДА</a></li>
+                <li class="hidden"><a href="/matches">МАТЧІ</a></li>
+                <li class="hidden"><a href="/stadium">СТАДІОН</a></li>
+                <li class="hidden"><a href="/school">ДЮШС</a></li>
+                <li class="hidden"><a href="/club">КЛУБ</a></li>
+                <li class="hidden"><a href="/media">МЕДІА</a></li>
+                <li class="hidden"><a href="/contacts">КОНТАКТИ</a></li>
+            </ul>
+
+        </div>
+
 
 
         <div onmouseover="showteamadd()" onmouseout="hideteamadd()" id="team-menu" class="add-menu">
@@ -196,7 +252,7 @@ js/photoswipe-ui-default.min.js">
 
 
             <ul>
-                <li><i class="fa fa-users" aria-hidden="true"></i></li>
+                <li class="head-img"><i class="fa fa-users" aria-hidden="true"></i></li>
                 <li><a href="/team/1">АРСЕНАЛ-КИЇВ</a></li>
                 <li><a href="/team/2">U-19</a></li>
             </ul>
@@ -207,11 +263,10 @@ js/photoswipe-ui-default.min.js">
 
 
             <ul>
-                <li><i class="fa fa-shield" aria-hidden="true"></i></li>
-                <li><a href="/club/history">ІСТОРІЯ</a></li>
-                <li><a href="/club/achievments">ДОСЯГНЕННЯ</a></li>
-                <li><a href="/club/philosophy">ФІЛОСОФІЯ</a></li>
-                <li><a href="/club/management">МЕНЕДЖМЕНТ</a></li>
+                <li class="head-img"><i class="fa fa-shield" aria-hidden="true"></i></li>
+                <li><a href="/club">ІСТОРІЯ</a></li>
+                <li><a href="/club">ДОСЯГНЕННЯ</a></li>
+                <li><a href="/club">ФІЛОСОФІЯ</a></li>
             </ul>
         </div>
 
@@ -220,17 +275,34 @@ js/photoswipe-ui-default.min.js">
 
 
             <ul>
-                <li><i class="fa fa-youtube-play" aria-hidden="true"></i></li>
-                <li><a href="/media/photo">ФОТО</a></li>
-                <li><a href="/media/video">ВІДЕО</a></li>
+                <li class="head-img"><i class="fa fa-youtube-play" aria-hidden="true"></i></li>
+                <li><a href="/media">АЛЬБОМИ</a></li>
+                <li><a href="/media">ВІДЕО</a></li>
             </ul>
         </div>
 
-    </div>
-    <div class="content-area">
+        <div  onmouseover="shownewsadd()" onmouseout="hidenewsadd()" id="news-menu" class="add-menu">
 
 
 
+            <ul>
+                <li class="head-img"><i class="fa fa-newspaper-o" aria-hidden="true"></i></li>
+                <li><a href="/news">ГОЛОВНА ПОДІЯ</a></li>
+                <li><a href="/news">НОВИНИ</a></li>
+            </ul>
+        </div>
+
+
+        <div  onmouseover="showlangadd()" onmouseout="hidelangadd()" id="lang-menu" class="add-menu">
+
+
+
+            <ul>
+                <li class="head-img"><i class="fa fa-globe" aria-hidden="true"></i></li>
+                <li><a href="/index/ua">УКРАЇНСЬКА</a></li>
+                <li><a href="/index/en">ENGLISH</a></li>
+            </ul>
+        </div>
 
 
 

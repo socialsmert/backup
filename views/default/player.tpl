@@ -1,14 +1,14 @@
 <style>
-
+    {foreach $player as $item name=player}
     .player-page{
-        background-image: url(/images/players/KT9_3634.jpg);
+        background-image: url(/images/players/{$item['photo2']});
     }
-    
+
     body{
         background: black;
     }
 
-   
+{/foreach}
 
 
 </style>
@@ -20,22 +20,22 @@
     <div class="player-content">
 
         <div class="content-left">
-           
-    
-           
+
+
+
             {foreach $player as $item name=player}
             <div class="content-left-header">
                 Думки
             </div>
             <div class="content-left-text">
-            {$item['info']}
+                {$item['info']}
             </div>
         </div>
         <div class="content-right">
 
             <div class="content-right-number">
 
-               {$item['number']}
+                {$item['number']}
 
             </div>
 
@@ -52,9 +52,9 @@
                     ПОЗИЦІЯ
 
                 </div>
-                
+
                 {$item['position']}
-                
+
 
             </div>
 
@@ -65,12 +65,12 @@
                     НАЦІОНАЛЬНІСТЬ
 
                 </div>
-                
+
                 {$item['nationality']}
-                
+
 
             </div>
-            
+
             <div class="content-item">
 
                 <div class="content-item-value">
@@ -78,12 +78,12 @@
                     ДАТА НАРОДЖЕННЯ
 
                 </div>
-                
+
                 {$item['birth']}
-                
+
 
             </div>
-            
+
             <div class="content-item">
 
                 <div class="content-item-value">
@@ -91,27 +91,27 @@
                     ЗРІСТ
 
                 </div>
-                
+
                 {$item['height']} см
-                
+
 
             </div>
 
-       <div class="content-item">
+            <div class="content-item">
 
                 <div class="content-item-value">
 
                     ВАГА
 
                 </div>
-                
+
                 {$item['weight']} кг
-                
+
 
             </div>
 
-       {/foreach}
-       
+            {/foreach}
+
         </div>
 
     </div>
