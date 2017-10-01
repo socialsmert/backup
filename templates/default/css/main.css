@@ -2327,6 +2327,7 @@ float: right;
     }
 
     .team-page-content{
+
         width: 426px;
     }
 
@@ -2403,7 +2404,7 @@ float: right;
 
 
     .ars-kids{
-        padding-top: 135px;
+        padding-top: 95px;
         height: 400px;
     }
 
@@ -2512,6 +2513,10 @@ float: right;
     .team-photo{
         height: 400px;
     }
+
+	.team-page{
+		padding-top: 70px;
+	}
 
 }
 
@@ -3180,4 +3185,48 @@ float: right;
     height: 65px;
     color: black;
     float: left;
+}
+
+
+a#lang1{
+	color: black;
+	top: 0;
+	right: 10px;
+	position: absolute;
+	opacity: 0.4;
+	padding-left: 2px;
+	letter-spacing: 1px;
+	text-align: center;
+	line-height: 37px;
+	border: 1px solid black;
+	margin-top: 15px;
+	font-weight: 200;
+	display: block;
+	width: 40px;
+	height: 40px;
+	font-size: 15px;
+	border-radius: 50px;
+
+}
+
+a#lang2{
+	color: black;
+	top: 0;
+	right: 55px;
+	position: absolute;
+	opacity: 0.4;
+	padding-left: 2px;
+	letter-spacing: 1px;
+	text-align: center;
+	line-height: 37px;
+	border: 1px solid black;
+	margin-top: 15px;
+	font-weight: 200;
+	display: block;
+
+	width: 40px;
+	height: 40px;
+	font-size: 15px;
+	border-radius: 50px;
+
 }

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-10-01 10:45:47
+/* Smarty version 3.1.30, created on 2017-10-01 11:14:31
   from "W:\domains\backup\views\default\header.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_59d09d2b96e422_08144768',
+  'unifunc' => 'content_59d0a3e7420f06_29449073',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'dcf47b41aded904a5e1762b9b19c3a13706669b6' => 
     array (
       0 => 'W:\\domains\\backup\\views\\default\\header.tpl',
-      1 => 1506843945,
+      1 => 1506845666,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_59d09d2b96e422_08144768 (Smarty_Internal_Template $_smarty_tpl) {
+function content_59d0a3e7420f06_29449073 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <html>
     <head>
@@ -170,7 +170,7 @@ js/photoswipe-ui-default.min.js">
             <li id="team-li" onmouseover="showteamadd()" onmouseout="hideteamadd()"><a href="/team">КОМАНДА</a></li>
             <li id="macthes-li"><a href="/matches">МАТЧІ</a></li>
             <li><a href="/stadium">СТАДІОН</a></li>
-            <li id="school-li"><a href="/school">ДЮШС</a></li>
+            <li id="school-li"><a href="/school">ДЮФШ</a></li>
             <li id="club-li" onmouseover="showclubadd()" onmouseout="hideclubadd()"><a href="/club">КЛУБ</a></li>
 
 
@@ -180,7 +180,7 @@ js/photoswipe-ui-default.min.js">
 
 
         <ul class="bottom-menu">
-            <li  id="lang-li" class="lang">УКРАЇНСЬКА</li>
+            <li onmouseover="showlangadd()" onmouseout="hidelangadd()"  id="lang-li" class="lang">УКРАЇНСЬКА</li>
             <li> <a href="/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
 
                 <a href="/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
@@ -231,13 +231,14 @@ js/photoswipe-ui-default.min.js">
         <div class="mobile-menu">
 
             <ul>
-                <li class="head"><a href="/" onclick="togglemenu(); return false;"><i class="fa fa-bars" aria-hidden="true"></i></a> <img src="/images/logoindex.png" alt=""></li>
+                <li class="head"><a href="/" onclick="togglemenu(); return false;"><i class="fa fa-bars" aria-hidden="true"></i></a> <img src="/images/logoindex.png" alt="">
+                    <a id="lang1" href="/index/ua">UA</a> <a id="lang2" href="/index/en">EN</a></li>
                 <li class="hidden"><a href="/">ГОЛОВНА</a></li>
                 <li class="hidden"><a href="/news">НОВИНИ</a></li>
                 <li class="hidden"><a href="/team">КОМАНДА</a></li>
                 <li class="hidden"><a href="/matches">МАТЧІ</a></li>
                 <li class="hidden"><a href="/stadium">СТАДІОН</a></li>
-                <li class="hidden"><a href="/school">ДЮШС</a></li>
+                <li class="hidden"><a href="/school">ДЮФШ</a></li>
                 <li class="hidden"><a href="/club">КЛУБ</a></li>
                 <li class="hidden"><a href="/media">МЕДІА</a></li>
                 <li class="hidden"><a href="/contacts">КОНТАКТИ</a></li>
